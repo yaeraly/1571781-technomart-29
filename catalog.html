@@ -11,216 +11,238 @@
 <body>
   <!-- Main Header Start -->
   <header class="header">
+
     <div class="header-top">
-      <span>ТЕХНОМАРТ</span>
-      <div>
-        <form action="#" method="GET">
-          <label for="search"><img src="./img/icon-search.svg" alt="Поиск иконка"> </label>
-          <input type="text" id="search" name="search" value="" placeholder="Поиск:">
-        </form>
-      </div>
-      <a href="blank.html"><img src="./img/icon-bookmark.svg" alt="Закладка иконка"> Закладки: <span>0</span></a>
-      <a href="blank.html"><img src="./img/icon-cart.svg" alt="Корзина иконка"> Корзина: <span>10</span></a>
-      <button type="button">Оформить заказ</button>
+      <span class="header__logo-text">техномарт</span>
+
+      <form class="header__search-form" action="#" method="GET">
+        <label class="header__search-label" for="search"><img class="header__search-icon" src="./img/icon-search.svg" alt=""> </label>
+        <input class="header__search-input" type="search" name="search" id="search" value="" placeholder="Поиск:">
+      </form>
+
+      <a class="header__bookmark" href="blank.html"><img class="header__bookmark-icon" src="./img/icon-bookmark.svg" alt=""> Закладки: <span>0</span></a>
+      <a class="header__cart" href="blank.html"><img class="header__cart-icon" src="./img/icon-cart.svg" alt=""> Корзина: <span>0</span></a>
+      
+      <button class="header__order-button" type="button">Оформить заказ</button>
     </div>
 
     <section class="header-bottom">
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <p>+7 (812) 555-05-55<br><span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
-      <a href="blank.html">
-        <img src="./img/icon-user.svg" alt=""> Равшан Джамшутович <img src="./img/icon-login.svg" alt="">
-      </a>
-      <ul>
-        <li><a href="blank.html">Мои заказы</a></li>
-        <li><a href="blank.html">Личный кабинет</a></li>
-      </ul>
+      <h1 class="header__main-heading">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <p class="header__phone">+7 (812) 555-05-55<br><span class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
+
+      <div class="user">
+        <a class="user__fullname-link" href="blank.html"><img class="user__user-icon" src="./img/icon-user.svg" alt=""> Равшан Джамшутович <img class="user__login-icon" src="./img/icon-login.svg" alt=""></a>
+
+        <ul class="user__profile-list">
+          <li class="user__item"><a class="user__link" href="blank.html">Мои заказы</a></li>
+          <li class="user__item"><a class="user__link" href="blank.html">Личный кабинет</a></li>
+        </ul>
+      </div>
     </section>
 
-    <nav class="header-nav">
-      <ul class="nav">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="index.html">Компания</a></li>
-        <li><a href="index.html">Каталог</a></li>
-        <li><a href="index.html">Новости</a></li>
-        <li><a href="index.html">Спецпредложения</a></li>
-        <li><a href="index.html">Доставка</a></li>
-        <li><a href="index.html">Контакты</a></li>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Главная</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Компания</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Каталог</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Новости</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Спецпредложения</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Доставка</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Контакты</a></li>
       </ul>
     </nav>
+
   </header>
-  <!-- Main Header End -->
 
 
   <!-- Main Content Start -->
   <main class="content">
-    <ul class="breadcrumbs">
-      <li><a href="blank.html"><img src="./img/icon-home.svg" alt=""></a></li>
-      <li><a href="blank.html">Каталог</a></li>
-      <li><a href="blank.html">Инструмент</a></li>
-      <li><a href="blank.html">Перфораторы</a></li>
+
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="blank.html"><img src="./img/icon-home.svg" alt=""></a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="blank.html">Каталог</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="blank.html">Инструмент</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="blank.html">Перфораторы</a></li>
     </ul>
 
-    <h2>ПЕРФОРАТОРЫ</h2>
+    <section class="products">
+      <h2 class="products__heading">ПЕРФОРАТОРЫ</h2>
 
-    <aside class="filter">
-      <p>ФИЛЬТР:</p>
-      <p>ЦЕНА:</p>
-      <form action="#" method="GET">
-        <input type="range" min="0" max="3000">
-        <p>0 - 3000</p>
-        <hr>
-        <p>ПРОИЗВОДИТЕЛИ:</p>
-        <input type="checkbox" name="makers" id="bosch" value="BOSCH" checked>
-        <label for="bosch">bosch</label><br>
+      <aside class="products__filter">
+        <p>ФИЛЬТР:</p>
+        <p>ЦЕНА:</p>
+        <form action="#" method="GET">
+          <input type="range" min="0" max="3000">
+          <p>0 - 3000</p>
+          <hr>
+          <p>ПРОИЗВОДИТЕЛИ:</p>
+          <input type="checkbox" name="makers" id="bosch" value="BOSCH" checked>
+          <label for="bosch">bosch</label><br>
+  
+          <input type="checkbox" name="makers" id="interskol" value="interskol">
+          <label for="interskol">ИНТЕРСКОЛ</label><br>
+  
+          <input type="checkbox" name="makers" id="makita" value="makita" checked>
+          <label for="makita">Makita</label><br>
+  
+          <input type="checkbox" name="makers" id="dewalt" value="dewalt">
+          <label for="dewalt">Dewalt</label><br>
+  
+          <input type="checkbox" name="makers" id="hitachi" value="hitachi">
+          <label for="hitachi">Hitachi</label><br>
+          <hr>
+  
+          <p>ПИТАНИЕ:</p>
+          <input type="radio" name="battery" id="battery" value="" checked>
+          <label for="battery">Аккумуляторные</label><br>
+  
+          <input type="radio" name="power" id="PowerOverNet" value="">
+          <label for="PowerOverNet">Сетевые</label><br>
+  
+          <input type="submit" value="ПОКАЗАТЬ">
+        </form>
+      </aside>
 
-        <input type="checkbox" name="makers" id="interskol" value="interskol">
-        <label for="interskol">ИНТЕРСКОЛ</label><br>
+      <section class="products__section">
+        <div class="products__sort">
+          <span class="products__sort-text">СОРТИРОВКА:</span>
 
-        <input type="checkbox" name="makers" id="makita" value="makita" checked>
-        <label for="makita">Makita</label><br>
+          <ul class="products__sort-list">
+            <li class="products__sort-item">ПО ЦЕНЕ</li>
+            <li class="products__sort-item">ПО ТИПУ</li>
+            <li class="products__sort-item">ПО ФУНКЦИОНАЛУ</li>
+          </ul>
+  
+          <img class="products__up-icon" src="./img/icon-up-dir.png" alt="">
+          <img class="products__down-icon" src="./img/icon-down-dir.png" alt="">
+        </div>
+  
+        <div class="products__card">
+          <img class="products__card-img" src="./img/product.png" alt="Перфоратор">
+          <p class="products__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
+          <p class="products__card-start-price">30500 Р.</p>
+          <a class="products__card-finak-price" href="blank.html">25500 Р.</a>
+        </div>
+  
+        <div class="products__card">
+          <img class="products__card-img" class="products__card-img" src="./img/product.png" alt="Перфоратор">
+          <p class="products__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
+          <p class="products__card-start-price">30500 Р.</p>
+          <a class="products__card-finak-price" href="blank.html">25500 Р.</a>
+        </div>
+  
+        <div class="products__card">
+          <button type="button"><img src="./img/icon-cart.svg" alt="Cart"> КУПИТЬ</button>
+          <button type="button">В закладки</button>
+          <p>Перфоратор BOSCH<br>BFG 9000</p>
+          <p class="products__card-start-price">30500 Р.</p>
+          <a class="products__card-finak-price" href="blank.html">25500 Р.</a>
+        </div>
+  
+        <div class="products__card">
+          <img class="products__card-img" src="./img/product.png" alt="Перфоратор">
+          <p class="products__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
+          <p class="products__card-start-price">22500 Р.</p>
+          <a class="products__card-finak-price" href="blank.html">15500 Р.</a>
+        </div>
+  
+        <div class="products__card">
+          <img class="products__card-img" src="./img/product.png" alt="">
+          <p class="products__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
+          <p class="products__card-start-price">30500 Р.</p>
+          <a class="products__card-finak-price" href="blank.html">25500 Р.</a>
+        </div>
+  
+        <div class="products__card">
+          <img class="products__card-img" src="./img/product.png" alt="">
+          <p class="products__card-desc">Перфоратор BOSCH<br>BFG 2000</p>
+          <a class="products__card-finak-price" href="blank.html">12500 Р.</a>
+        </div>
+  
+        <div class="products__card">
+          <img class="products__card-img" src="./img/product.png" alt="">
+          <p class="products__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
+          <p class="products__card-start-price">22500 Р.</p>
+          <a class="products__card-finak-price" href="blank.html">15500 Р.</a>
+        </div>
+  
+        <div class="products__card">
+          <img class="products__card-img" src="./img/product.png" alt="">
+          <p class="products__card-desc">Перфоратор BOSCH BFG 6000</p>
+          <p class="products__card-start-price">30500 Р.</p>
+          <a class="products__card-finak-price" href="blank.html">25500 Р.</a>
+        </div>
+  
+        <div class="products__card">
+          <img class="products__card-img" src="./img/product.png" alt="">
+          <p class="products__card-desc">Перфоратор BOSCH BFG 2000</p>
+          <a class="products__card-finak-price" href="blank.html">12500 Р.</a>
+        </div>
+  
+        <div class="products__pagination">
+          <ul class="products__pagination-list">
+            <li class="products__pagination-item hidden"><a class="products__pagination-link" href="blank.html">назад</a></li>
+            <li class="products__pagination-item active"><a class="products__pagination-link" href="blank.html">1</a></li>
+            <li class="products__pagination-item"><a class="products__pagination-link" href="blank.html">2</a></li>
+            <li class="products__pagination-item"><a class="products__pagination-link" href="blank.html">3</a></li>
+            <li class="products__pagination-item"><a class="products__pagination-link" href="blank.html">следующая</a></li>
+          </ul>
+        </div>
+  
+      </section>
+  
+      <section class="tool">
+        <h2 class="tool__heading">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
 
-        <input type="checkbox" name="makers" id="dewalt" value="dewalt">
-        <label for="dewalt">Dewalt</label><br>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
+        <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.</p>
+        <p>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      </section>
 
-        <input type="checkbox" name="makers" id="hitachi" value="hitachi">
-        <label for="hitachi">Hitachi</label><br>
-        <hr>
-
-        <p>ПИТАНИЕ:</p>
-        <input type="radio" name="battery" id="battery" value="" checked>
-        <label for="battery">Аккумуляторные</label><br>
-
-        <input type="radio" name="power" id="PowerOverNet" value="">
-        <label for="PowerOverNet">Сетевые</label><br>
-
-        <input type="submit" value="ПОКАЗАТЬ">
-      </form>
-    </aside>
-
-    <div class="products">
-      <div class="sort">
-        <span>СОРТИРОВКА:</span>
-        <ul>
-          <li>ПО ЦЕНЕ</li>
-          <li>ПО ТИПУ</li>
-          <li>ПО ФУНКЦИОНАЛУ</li>
-        </ul>
-
-        <img src="./img/icon-up-dir.png" alt="">
-        <img src="./img/icon-down-dir.png" alt="">
-      </div>
-
-      <div class="card">
-        <img src="./img/product.png" alt="Перфоратор">
-        <p>Перфоратор BOSCH<br>BFG 6000</p>
-        <p>30500 Р.</p>
-        <a href="blank.html">25500 Р.</a>
-      </div>
-      <div class="card">
-        <img src="./img/product.png" alt="Перфоратор">
-        <p>Перфоратор BOSCH<br>BFG 6000</p>
-        <p>30500 Р.</p>
-        <a href="blank.html">25500 Р.</a>
-      </div>
-      <div class="card">
-        <button type="button"><img src="./img/icon-cart.svg" alt="Cart"> КУПИТЬ</button>
-        <button type="button">В закладки</button>
-        <p>Перфоратор BOSCH<br>BFG 9000</p>
-        <p>30500 Р.</p>
-        <a href="blank.html">25500 Р.</a>
-      </div>
-      <div class="card">
-        <img src="./img/product.png" alt="Перфоратор">
-        <p>Перфоратор BOSCH<br>BFG 3000</p>
-        <p>22500 Р.</p>
-        <a href="blank.html">15500 Р.</a>
-      </div>
-      <div class="card">
-        <img src="./img/product.png" alt="">
-        <p>Перфоратор BOSCH<br>BFG 6000</p>
-        <p>30500 Р.</p>
-        <a href="blank.html">25500 Р.</a>
-      </div>
-      <div class="card">
-        <img src="./img/product.png" alt="">
-        <p>Перфоратор BOSCH<br>BFG 2000</p>
-        <a href="blank.html">12500 Р.</a>
-      </div>
-      <div class="card">
-        <img src="./img/product.png" alt="">
-        <p>Перфоратор BOSCH<br>BFG 3000</p>
-        <p>22500 Р.</p>
-        <a href="blank.html">15500 Р.</a>
-      </div>
-      <div class="card">
-        <img src="./img/product.png" alt="">
-        <p>Перфоратор BOSCH BFG 6000</p>
-        <p>30500 Р.</p>
-        <a href="blank.html">25500 Р.</a>
-      </div>
-      <div class="card">
-        <img src="./img/product.png" alt="">
-        <p>Перфоратор BOSCH BFG 2000</p>
-        <a href="blank.html">12500 Р.</a>
-      </div>
-
-      <div class="pagination">
-        <ul>
-          <li><a href="blank.html">1</a></li>
-          <li><a href="blank.html">2</a></li>
-          <li><a href="blank.html">3</a></li>
-          <li><a href="blank.html">СЛЕДУЮЩАЯ</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <section class="about-tool">
-      <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-        бетоне и камне.<br>
-        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
-        шуруповерта и отбойного молотка.<br>
-        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
-        дрель.</p>
     </section>
 
   </main>
-  <!-- Main Content End -->
 
 
   <!-- Main Footer Start -->
   <footer class="footer">
+
     <div class="footer-top">
-      <span>ТЕХНОМАРТ</span>
-      <ul class="nav">
-        <li><a href="index.html">Компания</a></li>
-        <li><a href="index.html">Новости</a></li>
-        <li><a href="index.html">Каталог</a></li>
-        <li><a href="index.html">Доставка</a></li>
-        <li><a href="index.html">Контакты</a></li>
+      <span class="footer__logo-text">техномарт</span>
+
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Компания</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Новости</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Каталог</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Доставка</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Контакты</a></li>
       </ul>
     </div>
 
     <div class="footer-center">
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
-      <ul class="nav">
-        <li><a href="blank.html">Материалы</a></li>
-        <li><a href="blank.html">Техника</a></li>
-        <li><a href="blank.html">Инструмент</a></li>
-        <li><a href="blank.html">Спецпредложения</a></li>
+      <p class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+
+      <ul class="footer__features-list">
+        <li class="footer__features-item"><a class="footer__features-link" href="blank.html">Материалы</a></li>
+        <li class="footer__features-item"><a class="footer__features-link" href="blank.html">Техника</a></li>
+        <li class="footer__features-item"><a class="footer__features-link" href="blank.html">Инструмент</a></li>
+        <li class="footer__features-item"><a class="footer__features-link" href="blank.html">Спецпредложения</a></li>
       </ul>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
-      <img src="./img/Вконтакте.svg" alt="Вконтакте иконка">
-      <img src="./img/Фейсбук.svg" alt="Фейсбук иконка">
-      <img src="./img/Инстаграм.svg" alt="Инстаграм иконка">
-      <p>Обратная связь:<br>mail@htmlacademy.ru</p>
-      <p>Разработано —<br>htmlacademy.ru</p>
+      <p class="footer__copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+
+      <img class="footer__social-icon" src="./img/vk.svg" alt="">
+      <img class="footer__social-icon" src="./img/fb.svg" alt="">
+      <img class="footer__social-icon" src="./img/insta.svg" alt="">
+      
+      <p>Обратная связь:<br><span>mail@htmlacademy.ru</span></p>
+      <p>Разработано —<br><span>htmlacademy.ru</span></p>
     </div>
+
   </footer>
-  <!-- Main Footer End -->
+
 </body>
 
 </html>
