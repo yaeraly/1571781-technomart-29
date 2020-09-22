@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Техномарт</title>
   <link rel="stylesheet" href="css/normalize.css">
-  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -65,12 +65,12 @@
       <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="blank.html">Перфораторы</a></li>
     </ul>
 
-    <section class="products">
-      <h2 class="products__heading">ПЕРФОРАТОРЫ</h2>
+    <section class="drill">
+      <h2 class="drill__heading">перфораторы</h2>
 
       <aside class="filter">
-        <p class="filter__text">ФИЛЬТР:</p>
-        <p class="filter__price-text">ЦЕНА:</p>
+        <p class="filter__text">фильтр:</p>
+        <p class="filter__price-text">цена:</p>
 
         <form class="filter__form" action="#" method="GET">
           <input class="filter__price-range" type="range" min="0" max="3000">
@@ -82,7 +82,7 @@
           <label class="filter__maker-label" for="bosch">bosch</label><br>
   
           <input class="filter__maker-input" type="checkbox" name="makers" id="interskol" value="interskol">
-          <label class="filter-maker-label" for="interskol">ИНТЕРСКОЛ</label><br>
+          <label class="filter__maker-label" for="interskol">ИНТЕРСКОЛ</label><br>
   
           <input class="filter__maker-input" type="checkbox" name="makers" id="makita" value="makita" checked>
           <label class="filter__maker-label" for="makita">Makita</label><br>
@@ -105,89 +105,89 @@
         </form>
       </aside>
 
-      <section class="products__section">
-        <div class="products__sort">
-          <span class="products__sort-text">СОРТИРОВКА:</span>
+      <section class="sort">
+        <div class="sort__drill">
+          <span class="sort__drill-text">сортировка:</span>
 
-          <ul class="products__sort-list">
-            <li class="products__sort-item">ПО ЦЕНЕ</li>
-            <li class="products__sort-item">ПО ТИПУ</li>
-            <li class="products__sort-item">ПО ФУНКЦИОНАЛУ</li>
+          <ul class="sort__drill-list">
+            <li class="sort__drill-item">по цене</li>
+            <li class="sort__drill-item">по типу</li>
+            <li class="sort__drill-item">по функционалу</li>
           </ul>
   
-          <img class="products__up-icon" src="./img/icon-up-dir.png" alt="">
-          <img class="products__down-icon" src="./img/icon-down-dir.png" alt="">
+          <img class="sort__drill-up-icon" src="./img/icon-up-dir.png" alt="">
+          <img class="sort__drill-down-icon" src="./img/icon-down-dir.png" alt="">
         </div>
   
-        <div class="products__card">
-          <img class="products__card-img" src="./img/product.png" alt="Перфоратор">
-          <p class="products__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
-          <p class="products__card-start-price">30500 Р.</p>
-          <a class="products__card-finak-price" href="blank.html">25500 Р.</a>
+        <div class="drill__card">
+          <img class="drill__card-img" src="./img/product.png" alt="Перфоратор">
+          <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
+          <p class="drill__card-start-price">30500 Р.</p>
+          <a class="drill__card-final-price" href="blank.html">25500 Р.</a>
         </div>
   
-        <div class="products__card">
-          <img class="products__card-img" class="products__card-img" src="./img/product.png" alt="Перфоратор">
-          <p class="products__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
-          <p class="products__card-start-price">30500 Р.</p>
-          <a class="products__card-finak-price" href="blank.html">25500 Р.</a>
+        <div class="drill__card">
+          <img class="drill__card-img" class="products__card-img" src="./img/product.png" alt="Перфоратор">
+          <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
+          <p class="drill__card-start-price">30500 Р.</p>
+          <a class="drill__card-final-price" href="blank.html">25500 Р.</a>
         </div>
   
-        <div class="products__card">
-          <button type="button"><img src="./img/icon-cart.svg" alt="Cart"> КУПИТЬ</button>
-          <button type="button">В закладки</button>
-          <p>Перфоратор BOSCH<br>BFG 9000</p>
-          <p class="products__card-start-price">30500 Р.</p>
-          <a class="products__card-finak-price" href="blank.html">25500 Р.</a>
+        <div class="drill__card">
+          <button class="drill__card-buy-button" type="button"><img src="./img/icon-cart.svg" alt=""> купить</button>
+          <button class="drill__card-bookmark-button" type="button">В закладки</button>
+          <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 9000</p>
+          <p class="drill__card-start-price">30500 Р.</p>
+          <a class="drill__card-final-price" href="blank.html">25500 Р.</a>
         </div>
   
-        <div class="products__card">
-          <img class="products__card-img" src="./img/product.png" alt="Перфоратор">
-          <p class="products__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
-          <p class="products__card-start-price">22500 Р.</p>
-          <a class="products__card-finak-price" href="blank.html">15500 Р.</a>
+        <div class="drill__card">
+          <img class="drill__card-img" src="./img/product.png" alt="Перфоратор">
+          <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
+          <p class="drill__card-start-price">22500 Р.</p>
+          <a class="drill__card-final-price" href="blank.html">15500 Р.</a>
         </div>
   
-        <div class="products__card">
-          <img class="products__card-img" src="./img/product.png" alt="">
-          <p class="products__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
-          <p class="products__card-start-price">30500 Р.</p>
-          <a class="products__card-finak-price" href="blank.html">25500 Р.</a>
+        <div class="drill__card">
+          <img class="drill__card-img" src="./img/product.png" alt="">
+          <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
+          <p class="drill__card-start-price">30500 Р.</p>
+          <a class="drill__card-final-price" href="blank.html">25500 Р.</a>
         </div>
   
-        <div class="products__card">
-          <img class="products__card-img" src="./img/product.png" alt="">
-          <p class="products__card-desc">Перфоратор BOSCH<br>BFG 2000</p>
-          <a class="products__card-finak-price" href="blank.html">12500 Р.</a>
+        <div class="drill__card">
+          <img class="drill__card-img" src="./img/product.png" alt="">
+          <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 2000</p>
+          <a class="drill__card-final-price" href="blank.html">12500 Р.</a>
         </div>
   
-        <div class="products__card">
-          <img class="products__card-img" src="./img/product.png" alt="">
-          <p class="products__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
-          <p class="products__card-start-price">22500 Р.</p>
-          <a class="products__card-finak-price" href="blank.html">15500 Р.</a>
+        <div class="drill__card">
+          <img class="drill__card-img" src="./img/product.png" alt="">
+          <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
+          <p class="drill__card-start-price">22500 Р.</p>
+          <a class="drill__card-final-price" href="blank.html">15500 Р.</a>
         </div>
   
-        <div class="products__card">
-          <img class="products__card-img" src="./img/product.png" alt="">
-          <p class="products__card-desc">Перфоратор BOSCH BFG 6000</p>
-          <p class="products__card-start-price">30500 Р.</p>
-          <a class="products__card-finak-price" href="blank.html">25500 Р.</a>
+        <div class="drill__card">
+          <img class="drill__card-img" src="./img/product.png" alt="">
+          <p class="drill__card-desc">Перфоратор BOSCH BFG 6000</p>
+          <p class="drill__card-start-price">30500 Р.</p>
+          <a class="drill__card-final-price" href="blank.html">25500 Р.</a>
         </div>
   
-        <div class="products__card">
-          <img class="products__card-img" src="./img/product.png" alt="">
-          <p class="products__card-desc">Перфоратор BOSCH BFG 2000</p>
-          <a class="products__card-finak-price" href="blank.html">12500 Р.</a>
+        <div class="drill__card">
+          <img class="drill__card-img" src="./img/product.png" alt="">
+          <p class="drill__card-desc">Перфоратор BOSCH BFG 2000</p>
+          <a class="drill__card-final-price" href="blank.html">12500 Р.</a>
         </div>
   
-        <div class="products__pagination">
-          <ul class="products__pagination-list">
-            <li class="products__pagination-item hidden"><a class="products__pagination-link" href="blank.html">назад</a></li>
-            <li class="products__pagination-item active"><a class="products__pagination-link" href="blank.html">1</a></li>
-            <li class="products__pagination-item"><a class="products__pagination-link" href="blank.html">2</a></li>
-            <li class="products__pagination-item"><a class="products__pagination-link" href="blank.html">3</a></li>
-            <li class="products__pagination-item"><a class="products__pagination-link" href="blank.html">следующая</a></li>
+        <div class="drill__pagination">
+          <ul class="drill__pagination-list">
+            <li class="drill__pagination-item hidden"><a class="drill__pagination-link" href="blank.html">назад</a></li>
+            <li class="drill__pagination-item active"><a class="drill__pagination-link" href="blank.html">1</a></li>
+            <li class="drill__pagination-item"><a class="drill__pagination-link" href="blank.html">2</a></li>
+            <li class="drill__pagination-item"><a class="drill__pagination-link" href="blank.html">3</a></li>
+            <li class="drill__pagination-item"><a class="drill__pagination-link" href="blank.html">следующая</a></li>
           </ul>
         </div>
   
