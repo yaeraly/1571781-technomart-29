@@ -34,8 +34,8 @@
         <a class="user__fullname-link" href="blank.html"><img class="user__user-icon" src="./img/icon-user.svg" alt=""> Равшан Джамшутович <img class="user__login-icon" src="./img/icon-login.svg" alt=""></a>
 
         <ul class="user__profile-list">
-          <li class="user__item"><a class="user__link" href="blank.html">Мои заказы</a></li>
-          <li class="user__item"><a class="user__link" href="blank.html">Личный кабинет</a></li>
+          <li class="user__profile-item"><a class="user__profile-link" href="blank.html">Мои заказы</a></li>
+          <li class="user__profile-item"><a class="user__profile-link" href="blank.html">Личный кабинет</a></li>
         </ul>
       </div>
     </section>
@@ -68,38 +68,40 @@
     <section class="products">
       <h2 class="products__heading">ПЕРФОРАТОРЫ</h2>
 
-      <aside class="products__filter">
-        <p>ФИЛЬТР:</p>
-        <p>ЦЕНА:</p>
-        <form action="#" method="GET">
-          <input type="range" min="0" max="3000">
-          <p>0 - 3000</p>
+      <aside class="filter">
+        <p class="filter__text">ФИЛЬТР:</p>
+        <p class="filter__price-text">ЦЕНА:</p>
+
+        <form class="filter__form" action="#" method="GET">
+          <input class="filter__price-range" type="range" min="0" max="3000">
+          <span class="filter__min-price">0</span> - <span class="filter__max-price">30000</span>
           <hr>
-          <p>ПРОИЗВОДИТЕЛИ:</p>
-          <input type="checkbox" name="makers" id="bosch" value="BOSCH" checked>
-          <label for="bosch">bosch</label><br>
+
+          <p class="filter__makers">производители:</p>
+          <input class="filter__maker-input" type="checkbox" name="makers" id="bosch" value="BOSCH" checked>
+          <label class="filter__maker-label" for="bosch">bosch</label><br>
   
-          <input type="checkbox" name="makers" id="interskol" value="interskol">
-          <label for="interskol">ИНТЕРСКОЛ</label><br>
+          <input class="filter__maker-input" type="checkbox" name="makers" id="interskol" value="interskol">
+          <label class="filter-maker-label" for="interskol">ИНТЕРСКОЛ</label><br>
   
-          <input type="checkbox" name="makers" id="makita" value="makita" checked>
-          <label for="makita">Makita</label><br>
+          <input class="filter__maker-input" type="checkbox" name="makers" id="makita" value="makita" checked>
+          <label class="filter__maker-label" for="makita">Makita</label><br>
   
-          <input type="checkbox" name="makers" id="dewalt" value="dewalt">
-          <label for="dewalt">Dewalt</label><br>
+          <input class="filter__maker-input" type="checkbox" name="makers" id="dewalt" value="dewalt">
+          <label class="filter__maker-label" for="dewalt">Dewalt</label><br>
   
-          <input type="checkbox" name="makers" id="hitachi" value="hitachi">
-          <label for="hitachi">Hitachi</label><br>
+          <input class="filter__maker-input" type="checkbox" name="makers" id="hitachi" value="hitachi">
+          <label class="filter__maker-label" for="hitachi">Hitachi</label><br>
           <hr>
   
-          <p>ПИТАНИЕ:</p>
-          <input type="radio" name="battery" id="battery" value="" checked>
-          <label for="battery">Аккумуляторные</label><br>
+          <p class="filter__charger">питание:</p>
+          <input class="filter__charger-input" type="radio" name="battery" id="battery" value="" checked>
+          <label class="filter__charger-label" for="battery">Аккумуляторные</label><br>
   
-          <input type="radio" name="power" id="PowerOverNet" value="">
-          <label for="PowerOverNet">Сетевые</label><br>
+          <input class="filter__charger-input" type="radio" name="power" id="PowerOverNet" value="">
+          <label class="filter__charger-label" for="PowerOverNet">Сетевые</label><br>
   
-          <input type="submit" value="ПОКАЗАТЬ">
+          <input class="filter__show-button" type="submit" value="ПОКАЗАТЬ">
         </form>
       </aside>
 
@@ -237,8 +239,8 @@
       <img class="footer__social-icon" src="./img/fb.svg" alt="">
       <img class="footer__social-icon" src="./img/insta.svg" alt="">
       
-      <p>Обратная связь:<br><span>mail@htmlacademy.ru</span></p>
-      <p>Разработано —<br><span>htmlacademy.ru</span></p>
+      <p>Обратная связь:<br><span class="footer__email">mail@htmlacademy.ru</span></p>
+      <p>Разработано —<br><span class="footer__designed-by">htmlacademy.ru</span></p>
     </div>
 
   </footer>
