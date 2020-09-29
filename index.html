@@ -13,24 +13,26 @@
   <header class="header">
 
     <div class="header-top">
-      <span class="header__logo-text">техномарт</span>
+      <img class="header__logo" src="img/logo-technomart-1.svg" alt="Техномарт">
 
       <form class="header__search-form" action="#" method="GET">
-        <label class="header__search-label" for="search"><img class="header__search-icon" src="./img/icon-search.vg" alt="Поиск - иконка"> </label>
+        <label class="header__search-label" for="search" title="Поиск на Техномарте"><img class="header__search-icon" src="img/icon-search.svg" alt=""> </label>
         <input class="header__search-input" type="search" name="search" id="search" value="" placeholder="Поиск:">
       </form>
 
-      <a class="header__bookmark" href="blank.html"><img class="header__bookmark-icon" src="./img/icon-bookmark.svg" alt="Закладка - иконка"> Закладки: <span>0</span></a>
-      <a class="header__cart" href="blank.html"><img class="header__cart-icon" src="./img/icon-cart.svg" alt="Корзина - иконка"> Корзина: <span>0</span></a>
+      <a class="header__bookmark" href="blank.html"><img class="header__bookmark-icon" src="img/icon-bookmark.svg" alt=""> Закладки: <span>0</span></a>
+      <a class="header__cart" href="blank.html"><img class="header__cart-icon" src="img/icon-cart.svg" alt=""> Корзина: <span>0</span></a>
       
       <button class="header__order-button" type="button">Оформить заказ</button>
     </div>
 
     <div class="header-bottom">
       <h1 class="header__main-heading">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <p class="header__phone">+7 (812) 555-05-55</p>
+      <p class="header__phone"><img src="img/icon-phone.svg" alt=""> +7 (812) 555-05-55</p>
       <small class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
-      <a class="header__signin" href="blank.html"><img src="./img/icon-login.svg" alt="Логин - иконка"> Войти</a>
+      <p class="header__phone">+7 (812) 555-05-55<br><span class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
+
+      <a class="header__signin" href="blank.html"><img src="img/icon-login.svg" alt=""> Войти</a>
       <a class="header__signup" href="blank.html">Регистрация</a>
     </div>
 
@@ -58,32 +60,41 @@
       <article class="features__item">
         <h3 class="features__title">Материалы</h3>
         <a class="features__link" href="blank.html">на любой вкус</a>
+        <img class="features__icon" src="img/icon-1.svg" alt="">
+        <span class="features__new-arrival">new</span>
       </article>
 
       <article class="features__item">
         <h3 class="features__title">Инструмент</h3>
         <a class="features__link" href="blank.html">на все случаи</a>
+        <img class="features__icon" src="img/icon-2.svg" alt="">
       </article>
 
       <article class="features__item">
         <h3 class="features__title">Техника</h3>
         <a class="features__link" href="blank.html">для стройки</a>
+        <img class="features__icon" src="img/icon-3.svg" alt="">
       </article>
 
       <article class="features__item">
         <h3 class="features__title">Скидки 50%</h3>
         <a class="features__link" href="blank.html">на 350 товаров</a>
+        <img class="features__icon" src="img/icon-4.svg" alt="">
       </article>
 
       <article class="features__item">
         <h3 class="features__title">Доставка</h3>
         <a class="features__link" href="blank.html">бесплатно</a>
+        <img class="features__icon" src="img/icon-5.svg" alt="">
       </article>
 
       <article class="features__slider">
         <h3 class="features__slider-title">Перфораторы</h3>
         <p class="features__slider-desc">Настоящие мужские игрушки</p>
         <a class="features__slider-link" href="blank.html">открыть каталог</a>
+        <img class="features__slider-left" src="img/icon-left.svg" alt="Налево">
+        <img class="features__slider-right" src="img/icon-right.svg" alt="Направо">
+        <img class="features__slider-photo" width="620" height="266" src="img/slider.jpg" alt="Строитель с перфоратором">
       </article>
     </section>
 
@@ -92,30 +103,32 @@
       <p class="products__category">все популярные товары</p>
 
       <div class="products__card">
-        <img class="products__card-img" src="./img/product1.png" alt="Перфоратор BOSCH 9000">
+        <img class="products__card-img" width="184" height="164" src="img/bosch-9000.png" alt="Перфоратор BOSCH 9000">
         <p class="products__card-desc">Перфоратор BOSCH<br>BFG 9000</p>
         <p class="products__card-start-price">32500 Р.</p>
         <a class="products__card-final-price" href="blank.html">25500 Р.</a>
       </div>
 
       <div class="products__card">
-        <img class="products__card-img" src="./img/product2.png" alt="Перфоратор BOSCH 3000">
+        <img class="products__card-img" width="127" height="112" src="img/bosch-3000.png" alt="Перфоратор BOSCH 3000">
         <p class="products__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
         <p class="products__card-start-price">22500 Р.</p>
         <a class="products__card-final-price" href="blank.html">15500 Р.</a>
+        <span class="features__new-arrival">new</span>
       </div>
 
       <div class="products__card">
-        <img class="products__card-img" src="./img/product3.png" alt="Перфоратор BOSCH 6000">
+        <img class="products__card-img" width="144" height="128" src="img/bosch-6000.png" alt="Перфоратор BOSCH 6000">
         <p class="products__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
         <p class="products__card-start-price">30500 Р.</p>
         <a class="products__card-final-price" href="blank.html">25500 Р.</a>
       </div>
 
       <div class="products__card">
-        <img class="products__card-img" src="./img/product4.png" alt="Перфоратор BOSCH 2000">
+        <img class="products__card-img" width="127" height="112" src="img/bosch-2000.png" alt="Перфоратор BOSCH 2000">
         <p class="products__card-desc">Перфоратор BOSCH<br>BFG 2000</p>
         <a class="products__card-final-price" href="blank.html">12500 Р.</a>
+        <span class="features__new-arrival">new</span>
       </div>
     </section>
 
@@ -125,42 +138,42 @@
 
       <section class="maker">
         <h2 class="maker__brend">Bosch</h2>
-        <img class="maker__logo" src="./img/logo1.png" alt="Bosch Logo">
+        <img class="maker__logo" width="126" height="37" src="img/bosch.png" alt="Компания Bosch">
       </section>
 
       <section class="maker">
         <h2 class="maker__brend">Makita</h2>
-        <img class="maker__logo" src="./img/logo2.png" alt="Makita Logo">
+        <img class="maker__logo" width="123" height="40" src="img/makita.png" alt="Компания Makita">
       </section>
 
       <section class="maker">
         <h2 class="maker__brend">Dewalt</h2>
-        <img class="maker__logo" src="./img/logo3.png" alt="Dewalt Logo">
+        <img class="maker__logo" width="146" height="44" src="img/dewalt.png" alt="Компания Dewalt">
       </section>
 
       <section class="maker">
         <h2 class="maker__brend">Интерскол</h2>
-        <img class="maker__logo" src="./img/logo4.png" alt="Интерскол Logo">
+        <img class="maker__logo" width="200" height="76" src="img/Интерскол.png" alt="Компания Интерскол">
       </section>
 
       <section class="maker">
         <h2 class="maker__brend">Hitachi</h2>
-        <img class="maker__logo" src="./img/logo5.png" alt="Hitachi Logo">
+        <img class="maker__logo" width="169" height="31" src="img/hitachi.png" alt="Компания Hitachi">
       </section>
 
       <section class="maker">
         <h2 class="maker__brend">LG</h2>
-        <img class="maker__logo" src="./img/logo6.png" alt="LG Logo">
+        <img class="maker__logo" width="121" height="73" src="img/lg.png" alt="Компания LG">
       </section>
 
       <section class="maker">
         <h2 class="maker__brend">AEG</h2>
-        <img class="maker__logo" src="./img/logo7.png" alt="AEG Logo">
+        <img class="maker__logo" width="151" height="96" src="img/aeg.png" alt="Компания AEG">
       </section>
 
       <section class="maker">
         <h2 class="maker__brend">Metabo</h2>
-        <img class="maker__logo" src="./img/logo8.png" alt="Metabo Logo">
+        <img class="maker__logo" width="204" height="69" src="img/metabo.png" alt="Компания Metabo">
       </section>
     </section>
 
@@ -174,16 +187,15 @@
         <li class="services__item"><a class="services__link" href="blank.html">Кредит</a></li>
       </ul>
 
+      <img class="services__truck" width="468" height="261" src="img/truck.png" alt="Грузовик на доставку">
       <section class="services__info">
         <h3 class="services__type">Доставка</h3>
-        <p>
           <pre class="services__text">
             Мы с удовольствием доставим ваш товар прямо 
             к вашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем, 
             поднимая его на ваш этаж!
           </pre>
-        </p>
       </section>
 
     </section>
@@ -207,7 +219,7 @@
       <section class="address">
         <h2 class="address__heading">Контакты</h2>
         <p class="address__text">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-        <img class="address__map" src="./img/map.svg" alt="Компания на карте">
+        <img class="address__map" width="300" height="158" src="img/map.png" alt="Наша компания на карте">
         <a class="address__link" href="blank.html">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -219,7 +231,7 @@
   <footer class="footer">
 
     <div class="footer-top">
-      <span class="footer__logo-text">техномарт</span>
+      <img class="footer__logo" src="img/logo-technomart-2.svg" alt="Техномарт">
 
       <ul class="footer__nav-list">
         <li class="footer__nav-item"><a class="footer__nav-link" href="blank.html">Компания</a></li>
@@ -244,9 +256,15 @@
     <div class="footer-bottom">
       <p class="footer__copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
 
-      <img class="footer__social-icon" src="./img/vk.svg" alt="Вконтакте - иконка">
-      <img class="footer__social-icon" src="./img/fb.svg" alt="Facebook - иконка">
-      <img class="footer__social-icon" src="./img/insta.svg" alt="Instagram - иконка">
+      <a class="footer__social-link" href="blank.html" title="Наш Вконтакте">
+        <img class="footer__social-icon" src="img/icon-vk.svg" alt="Наша группа в ВК">
+      </a>
+      <a class="footer__social-link" href="blank.html" title="Наш Фейсбук">
+        <img class="footer__social-icon" src="img/icon-fb.svg" alt="Наша группа в Facebook">
+      </a>
+      <a class="footer__social-link" href="blank.html" title="Наш Инстаграм">
+        <img class="footer__social-icon" src="img/icon-insta.svg" alt="Наша страница в Instagram">
+      </a>
       
       <p>Обратная связь:<br><span class="footer__email">mail@htmlacademy.ru</span></p>
       <p>Разработано —<br><span class="footer__designed-by">htmlacademy.ru</span></p>
