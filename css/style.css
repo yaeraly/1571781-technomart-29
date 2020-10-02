@@ -497,4 +497,31 @@
     color: var(--special-yellowlight);
 }
 
+/* Catalog */
 
+.breadcrumbs__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.drill__grid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}
+.drill__sort-grid {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+.drill__card {
+    width: 220px;
+    height: 318px;
+    border: 1px solid #EAEAEA;
+    text-align: center;
+}
+.drill__pagination-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sort__drill-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
