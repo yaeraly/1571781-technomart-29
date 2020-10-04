@@ -83,6 +83,20 @@
     --warning: #FFBF47;
     --error: #BA2732;
 }
+/* grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 5fr));
+    grid-gap: 20px;
+}
+
+/* flex */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 .page {
     height: 100%;
     margin: 0;
@@ -191,8 +205,8 @@
 }
 .header__nav-list {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
+    justify-content: space-around;
 }
 .header__nav-item {
 }
@@ -216,29 +230,27 @@
 .features__item {
     width: 300px;
     height: 123px;
-}
-.features__grid{
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    position: relative;
 }
 .features__item:nth-of-type(1) {
     background-color: var(--special-yellow);
+    grid-column: span 4;
 }
 .features__item:nth-of-type(2) {
     background-color: var(--special-blue);
+    grid-column: span 4;
 }
 .features__item:nth-of-type(3) {
     background-color: var(--special-lilac);
+    grid-column: span 4;
 }
 .features__item:nth-of-type(4) {
     background-color: var(--special-greenlight);
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    grid-column: 9 / span 4;
 }
 .features__item:nth-of-type(5) {
     background-color: var(--special-yellow);
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
+    grid-column: 9 / span 4;
 }
 .features__title {
     font-size: 24px;
@@ -252,21 +264,38 @@
     text-transform: uppercase;
     color: var(--white);
 }
+.features__new-arrival {
+    padding: 2px 35px;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: var(--basic-red);
+    color: var(--white);
+    position: absolute;
+    right: -25px;
+    top: 8px;
+    transform: rotate(45deg);
+}
 .features__slider {
+    font-family: 'Cuprum', sans-serif;
+    width: 620px;
     position: relative;
     grid-column: 1 / 3;
-    grid-row: 2 / 4;
+    grid-row: 2 / span 2;
+    color: var(--white);
 }
 .features__slider-title {
     font-size: 36px;
+    text-transform: uppercase;
     line-height: 36px;
     font-weight: 700;
+    margin-top: 20px;
     position: absolute;
-    top: 20px;
+    left: 25px;
 }
 .features__slider-desc {
     position: absolute;
-    top: 100px;
+    top: 50px;
+    left: 25px;
 }
 .features__slider-link {
     background-color: var(--basic-red);
@@ -277,7 +306,20 @@
     text-align: center;
     text-decoration: none;
     position: absolute;
-    top: 280px;
+    top: 220px;
+    left: 25px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+}
+.features__slider-left {
+    position: absolute;
+    top: 125px;
+    left: 25px;
+}
+.features__slider-right {
+    position: absolute;
+    top: 125px;
+    right: 25px;
 }
 .features__slider-photo {
     
@@ -296,16 +338,16 @@
     text-align: center;
     text-transform: uppercase;
 }
-.products__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
 .products__card {
     font-family: 'PT Sans', sans-serif;
-    text-align: center;
     width: 220px;
     height: 318px;
     border: 1px solid #EAEAEA;
+    margin: 0 20px 20px 0;
+    box-sizing: border-box;
+}
+.products__card:nth-child(4n) {
+    margin-right: 0;
 }
 .products__card-img {
 }
@@ -348,15 +390,16 @@
     text-align: center;
     text-transform: uppercase;
 }
-.makers__grid {
-    display: grid;
-    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
-}
 .maker {
     width: 220px;
     height: 145px;
     border: 1px solid #EAEAEA;
     text-align: center;
+    margin: 0 20px 20px 0;
+    box-sizing: border-box;
+}
+.maker:nth-child(4n) {
+    margin-right: 0;
 }
 .maker__brend {
     display: none;
@@ -396,6 +439,7 @@
 .about-us {
 }
 .company {
+    grid-column: 1 / span 6;
 }
 .company__heading {
     font-size: 30px;
@@ -424,6 +468,7 @@
     text-decoration: none;
 }
 .address {
+    grid-column: 7 / span 6;
 }
 .address__heading {
     font-size: 30px;
@@ -455,8 +500,8 @@
 }
 .footer__nav-list {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    justify-content: space-around;
 }
 .footer__nav-item {
 }
@@ -470,8 +515,8 @@
 }
 .footer__features-list {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-around;
 }
 .footer__features-item {
 }
