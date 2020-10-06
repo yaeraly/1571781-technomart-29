@@ -13,37 +13,33 @@
   <header class="header">
 
     <div class="header-top">
-      <div class="container">
-        <div class="header-top__grid">
-          <img class="header__logo" src="img/logo-technomart-1.svg" alt="Техномарт">
+      <div class="container flex-space-between">
+        <img class="header__logo" src="img/logo-technomart-1.svg" alt="Техномарт">
       
-          <form class="header__search-form" action="#" method="GET">
-            <label class="header__search-label" for="search" title="Поиск на Техномарте"><img class="header__search-icon" src="img/icon-search.svg" alt=""> </label>
-            <input class="header__search-input" type="search" name="search" id="search" value="" placeholder="Поиск:">
-          </form>
+        <form class="header__search-form" action="#" method="GET">
+          <label class="header__search-label" for="search" title="Поиск на Техномарте"><img class="header__search-icon" src="img/icon-search.svg" alt=""> </label>
+          <input class="header__search-input" type="search" name="search" id="search" value="" placeholder="Поиск:">
+        </form>
       
-          <a class="header__bookmark" href="blank.html"><img class="header__bookmark-icon" src="img/icon-bookmark.svg" alt=""> Закладки: <span>0</span></a>
-          <a class="header__cart" href="blank.html"><img class="header__cart-icon" src="img/icon-cart.svg" alt=""> Корзина: <span>0</span></a>
+        <a class="header__bookmark" href="blank.html"><img class="header__bookmark-icon" src="img/icon-bookmark.svg" alt=""> Закладки: <span>0</span></a>
+        <a class="header__cart" href="blank.html"><img class="header__cart-icon" src="img/icon-cart.svg" alt=""> Корзина: <span>0</span></a>
             
-          <button class="header__order-button" type="button">Оформить заказ</button>
-        </div>
+        <button class="header__order-button" type="button">Оформить заказ</button>
       </div>
     </div>
     
     <div class="header-bottom">
-      <div class="container">
-        <div class="header-bottom__grid">
-          <h1 class="header__main-heading">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <div class="container grid">
+        <h1 class="header__main-heading">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
   
-          <div class="header__contact">
-            <p class="header__phone"><img src="img/icon-phone.svg" alt=""> +7 (812) 555-05-55</p>
-            <small class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
-          </div>
+        <div class="header__contact">
+          <p class="header__phone"><img src="img/icon-phone.svg" alt=""> +7 (812) 555-05-55</p>
+          <small class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
+        </div>
       
-          <div class="header__sign">
-            <a class="header__signin" href="blank.html"><img src="img/icon-login.svg" alt=""> Войти</a>
-            <a class="header__signup" href="blank.html">Регистрация</a>
-          </div>
+        <div class="header__sign">
+          <a class="header__signin" href="blank.html"><img src="img/icon-login.svg" alt=""> Войти</a>
+          <a class="header__signup" href="blank.html">Регистрация</a>
         </div>
       </div>
     </div>
@@ -116,8 +112,11 @@
       </section>
   
       <section class="products">
-        <h2 class="products__heading">Популярные товары:</h2>
-        <p class="products__category">все популярные товары</p>
+
+        <div class="products__head">
+          <h2 class="products__heading">Популярные товары:</h2>
+          <p class="products__category">все популярные товары</p>
+        </div>
   
         <div class="products__wrapper flex">
           <div class="products__card">
@@ -148,12 +147,15 @@
             <a class="products__card-final-price" href="blank.html">12500 Р.</a>
             <span class="features__new-arrival">new</span>
           </div>
+          
         </div>
       </section>
   
       <section class="makers">
-        <h2 class="makers__heading">Популярные производители:</h2>
-        <p class="makers__category">все производители</p>
+        <div class="makers__head">
+          <h2 class="makers__heading">Популярные производители:</h2>
+          <p class="makers__category">все производители</p>
+        </div>
   
         <div class="makers__wrapper flex">
           <section class="maker">
@@ -198,30 +200,34 @@
         </div>
 
       </section>
-  
-      <section class="services">
+    </div>
+
+    <section class="services">
+      <div class="container">
         <h2 class="services__heading">Сервисы</h2>
         <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-  
-        <ul class="services__list">
-          <li class="services__item"><a class="services__link" href="blank.html">Доставка</a></li>
-          <li class="services__item"><a class="services__link" href="blank.html">Гарантия</a></li>
-          <li class="services__item"><a class="services__link" href="blank.html">Кредит</a></li>
-        </ul>
-  
-        <img class="services__truck" width="468" height="261" src="img/truck.png" alt="Грузовик на доставку">
-        <section class="services__info">
-          <h3 class="services__type">Доставка</h3>
+    
+        <div class="services__wrapper grid">
+          <ul class="services__list">
+            <li class="services__item"><a class="services__link" href="blank.html">Доставка</a></li>
+            <li class="services__item"><a class="services__link" href="blank.html">Гарантия</a></li>
+            <li class="services__item"><a class="services__link" href="blank.html">Кредит</a></li>
+          </ul>
+      
+          <section class="services__info">
+            <h3 class="services__type">Доставка</h3>
             <pre class="services__text">
-              Мы с удовольствием доставим ваш товар прямо 
-              к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, 
-              поднимая его на ваш этаж!
+Мы с удовольствием доставим ваш товар прямо 
+к вашему подъезду совершенно бесплатно!
+Ведь мы неплохо заработаем, 
+поднимая его на ваш этаж!
             </pre>
-        </section>
+          </section>
+        </div>
+      </div>
+    </section>
   
-      </section>
-  
+    <div class="container">
       <div class="about-us grid">
         <section class="company">
           <h2 class="company__heading">Компания «Техномарт»</h2>
@@ -254,7 +260,7 @@
   <footer class="footer">
 
     <div class="footer-top">
-      <div class="container">
+      <div class="container grid">
         <img class="footer__logo" src="img/logo-technomart-2.svg" alt="Техномарт">
     
         <ul class="footer__nav-list">
@@ -268,7 +274,7 @@
     </div>
   
     <div class="footer-center">
-      <div class="container">
+      <div class="container grid">
         <p class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
     
         <ul class="footer__features-list">
@@ -281,25 +287,23 @@
     </div>
     
     <div class="footer-bottom">
-      <div class="container">
-        <div class="footer-bottom__grid">
-          <p class="footer__copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+      <div class="container grid">
+        <p class="footer__copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
     
-          <div class="footer__socials">
-            <a class="footer__social-link" href="blank.html" title="Наш Вконтакте">
-              <img class="footer__social-icon" src="img/icon-vk.svg" alt="Наша группа в ВК">
-            </a>
-            <a class="footer__social-link" href="blank.html" title="Наш Фейсбук">
-              <img class="footer__social-icon" src="img/icon-fb.svg" alt="Наша группа в Facebook">
-            </a>
-            <a class="footer__social-link" href="blank.html" title="Наш Инстаграм">
-              <img class="footer__social-icon" src="img/icon-insta.svg" alt="Наша страница в Instagram">
-            </a>
-          </div>
-          
-          <p>Обратная связь:<br><span class="footer__email">mail@htmlacademy.ru</span></p>
-          <p>Разработано —<br><span class="footer__designed-by">htmlacademy.ru</span></p>
+        <div class="footer__socials">
+          <a class="footer__social-link" href="blank.html" title="Наш Вконтакте">
+            <img class="footer__social-icon" src="img/icon-vk.svg" alt="Наша группа в ВК">
+          </a>
+          <a class="footer__social-link" href="blank.html" title="Наш Фейсбук">
+            <img class="footer__social-icon" src="img/icon-fb.svg" alt="Наша группа в Facebook">
+          </a>
+          <a class="footer__social-link" href="blank.html" title="Наш Инстаграм">
+            <img class="footer__social-icon" src="img/icon-insta.svg" alt="Наша страница в Instagram">
+          </a>
         </div>
+          
+        <p class="footer__email-text">Обратная связь:<br><span class="footer__email">mail@htmlacademy.ru</span></p>
+        <p class="footer__designed-by-text">Разработано —<br><span class="footer__designed-by">htmlacademy.ru</span></p>
       </div>
     </div>
 
