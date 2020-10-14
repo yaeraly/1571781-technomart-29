@@ -13,16 +13,30 @@
   <header class="header">
 
     <div class="header-top">
-      <div class="container flex-space-between">
+      <div class="container grid-no-gap">
         <a class="header__logo-link" href="index.html"><img class="header__logo" src="img/logo-technomart-1.svg" alt="Техномарт"></a>
-        
+      
         <form class="header__search-form" action="#" method="GET">
-          <label class="header__search-label" for="search" title="Поиск на Техномарте"><img class="header__search-icon" src="img/icon-search.svg" alt=""> </label>
+          <label class="header__search-label" for="search" title="Поиск на Техномарте">
+            <svg class="header__search-icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z" fill="#fff"/>
+            </svg>            
+          </label>
           <input class="header__search-input" type="search" name="search" id="search" value="" placeholder="Поиск:">
         </form>
       
-        <a class="header__bookmark" href="blank.html"><img class="header__bookmark-icon" src="img/icon-bookmark.svg" alt=""> Закладки: <span>0</span></a>
-        <a class="header__cart" href="blank.html"><img class="header__cart-icon" src="img/icon-cart.svg" alt=""> Корзина: <span>10</span></a>
+        <a class="header__bookmark" href="blank.html">
+          <svg class="header__bookmark-icon" width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 00-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 011-1h12a1 1 0 011 1v14z" fill="#fff"/>
+          </svg>
+          Закладки: <span>0</span>
+        </a>
+        <a class="header__cart" href="blank.html">
+          <svg class="header__cart-icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="#fff"/>
+          </svg>
+          Корзина: <span>0</span>
+        </a>
             
         <button class="header__order-button" type="button">Оформить заказ</button>
       </div>
@@ -49,19 +63,17 @@
     </div>
 
     <div class="container">
-      <div class="container">
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Компания</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Каталог</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Новости</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Спецпредложения</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Доставка</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Компания</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Каталог</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Новости</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Спецпредложения</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Доставка</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="blank.html">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
 
   </header>
@@ -273,8 +285,8 @@
           </a>
         </div>
           
-        <p class="footer__email-text">Обратная связь:<br><span class="footer__email">mail@htmlacademy.ru</span></p>
-        <p class="footer__designed-by-text">Разработано —<br><span class="footer__designed-by">htmlacademy.ru</span></p>
+        <p class="footer__email-text">Обратная связь:<br><a class="footer__email" href="blank.html">mail@htmlacademy.ru</a></p>
+        <p class="footer__designed-by-text">Разработано —<br><a class="footer__designed-by" href="blank.html">htmlacademy.ru</a></p>
       </div>
     </div>
 
