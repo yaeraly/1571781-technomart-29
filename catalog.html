@@ -14,25 +14,27 @@
 
     <div class="header-top">
       <div class="container grid-no-gap">
-        <a class="header__logo-link" href="index.html"><img class="header__logo" src="img/logo-technomart-1.svg" alt="Техномарт"></a>
+        <a class="header__logo-link" href="index.html">
+          <img class="header__logo" src="img/logo-technomart-1.svg" alt="Логотип нашей компании" role="img" aria-label="Логотип нашей компании"> 
+        </a>
       
         <form class="header__search-form" action="#" method="GET">
-          <label class="header__search-label" for="search" title="Поиск на Техномарте">
-            <svg class="header__search-icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <label class="header__search-label" for="search" aria-hidden="true">
+            <svg class="header__search-icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z" fill="#fff"/>
             </svg>            
           </label>
-          <input class="header__search-input" type="search" name="search" id="search" value="" placeholder="Поиск:">
+          <input class="header__search-input" type="search" name="search" id="search" value="" placeholder="Поиск:" aria-label="Поиск на Техномарте">
         </form>
       
         <a class="header__bookmark" href="blank.html">
-          <svg class="header__bookmark-icon" width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="header__bookmark-icon" width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <path d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 00-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 011-1h12a1 1 0 011 1v14z" fill="#fff"/>
           </svg>
           Закладки: <span>0</span>
         </a>
         <a class="header__cart catalog" href="blank.html">
-          <svg class="header__cart-icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="header__cart-icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="#fff"/>
           </svg>
           Корзина: <span>10</span>
@@ -48,21 +50,21 @@
   
         <div class="header__contact">
           <p class="header__phone">
-            <svg class="header__phone-icon" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="header__phone-icon" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path d="M15.57 18.98h-.94a14.53 14.53 0 01-9.36-4.86 16.33 16.33 0 01-4.3-9.9V3.09c.09-.77.47-1.3.9-1.75C2.43.77 3.26.04 4 .02 4.56 0 5.5.4 5.88.92c.33.44.5 1.34.66 2 .15.67.5 1.64.4 2.29-.14 1-1.48 1.43-1.87 2.17a14.03 14.03 0 006.29 7.03c.71-.4 1.35-1.57 2.33-1.6.36 0 .82.18 1.19.29.4.12.74.27 1.1.4.6.23 1.65.53 2 1.03.37.51.57 1.35.5 1.88-.17 1.04-1.89 2.2-2.9 2.57z" fill="#B7BFC8"/>
             </svg> 
-            <span class="header__phone-number">+7 (812) 555-05-55</span>
+            <span class="header__phone-number" aria-label="Наш номер телефона + 7 (812) 555-05-55">+7 (812) 555-05-55</span>
           </p>
-          <small class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
+          <small class="header__address" aria-label="Мы находимся по адресу город Санкт-Петербург, улица Конюшенная, дом 19/8">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
         </div>
       
         <div class="user">
           <a class="user__fullname-link" href="blank.html">
-            <svg class="user__user-icon"  width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="user__user-icon"  width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z" fill="#C5C5C5"/>
             </svg>
             <span class="user__fullname">Равшан Джамшутович</span>
-            <svg class="user__login-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="user__login-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path d="M20 8.5L11.12 0v6h-6v5h6v6L20 8.5z" fill="#C5C5C5"/><path d="M2.1 13.95V3.05c.02-.38.18-1.06 1.02-1.06h5.02V0H3.12C.94 0 .12 1.81.09 3.03v10.94C.1 15.2.94 17 3.12 17h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z" fill="#C5C5C5"/>
             </svg>
           </a>
@@ -123,7 +125,7 @@
               <p class="filter__makers">производители:</p>
               <div class="filter__makers-wrapper">
                 <label class="filter__maker-label" for="bosch">
-                  <input class="filter__maker-input" type="checkbox" name="makers" id="bosch" value="BOSCH" checked>
+                  <input class="filter__maker-input visually-hidden" type="checkbox" name="makers" id="bosch" value="BOSCH" checked>
                   bosch
                   <span class="filter__maker-checkmark"></span>
                 </label><br>
@@ -131,7 +133,7 @@
       
               <div class="filter__makers-wrapper">
                 <label class="filter__maker-label" for="interskol">
-                  <input class="filter__maker-input" type="checkbox" name="makers" id="interskol" value="interskol">
+                  <input class="filter__maker-input visually-hidden" type="checkbox" name="makers" id="interskol" value="interskol">
                   ИНТЕРСКОЛ
                   <span class="filter__maker-checkmark"></span>
                 </label><br>
@@ -139,7 +141,7 @@
       
               <div class="filter__makers-wrapper">
                 <label class="filter__maker-label" for="makita">
-                  <input class="filter__maker-input" type="checkbox" name="makers" id="makita" value="makita" checked>
+                  <input class="filter__maker-input visually-hidden" type="checkbox" name="makers" id="makita" value="makita" checked>
                   Makita
                   <span class="filter__maker-checkmark"></span>
                 </label><br>
@@ -147,7 +149,7 @@
               
               <div class="filter__makers-wrapper">
                 <label class="filter__maker-label" for="dewalt">
-                  <input class="filter__maker-input" type="checkbox" name="makers" id="dewalt" value="dewalt">
+                  <input class="filter__maker-input visually-hidden" type="checkbox" name="makers" id="dewalt" value="dewalt">
                   Dewalt
                   <span class="filter__maker-checkmark"></span>
                 </label><br>
@@ -155,7 +157,7 @@
               
               <div class="filter__makers-wrapper">
                 <label class="filter__maker-label" for="hitachi">
-                  <input class="filter__maker-input" type="checkbox" name="makers" id="hitachi" value="hitachi">
+                  <input class="filter__maker-input visually-hidden" type="checkbox" name="makers" id="hitachi" value="hitachi">
                   Hitachi
                   <span class="filter__maker-checkmark"></span>
                 </label><br>
@@ -165,7 +167,7 @@
               <p class="filter__charger">питание:</p>
               <div class="filter__charger-label-wrapper">
                 <label class="filter__charger-label" for="battery">
-                  <input class="filter__charger-input" type="radio" name="battery" id="battery" value="Аккумуляторные" checked>
+                  <input class="filter__charger-input visually-hidden" type="radio" name="battery" id="battery" value="Аккумуляторные" checked>
                   Аккумуляторные
                   <span class="filter__charger-checkmark"></span>
                 </label><br>
@@ -173,7 +175,7 @@
       
               <div class="filter__charger-label-wrapper">
                 <label class="filter__charger-label" for="PowerOverNet">
-                  <input class="filter__charger-input" type="radio" name="battery" id="PowerOverNet" value="Сетевые">
+                  <input class="filter__charger-input visually-hidden" type="radio" name="battery" id="PowerOverNet" value="Сетевые">
                   Сетевые
                   <span class="filter__charger-checkmark"></span>
                 </label><br>
@@ -185,7 +187,7 @@
           </aside>
     
           <section class="sort">
-            <h2 class="sort__heading">сортировка товара</h2>
+            <h2 class="sort__heading visually-hidden">сортировка товара</h2>
             <div class="sort__drill">
               <span class="sort__drill-text">сортировка:</span>
     
@@ -200,17 +202,17 @@
       
             <div class="drill__wrapper flex">
               <div class="drill__card">
-                <img class="drill__card-img" width="144" height="128" src="img/bosch-6000.png" alt="Перфоратор BOSCH 6000">
+                <img class="drill__card-img" width="144" height="128" src="img/bosch-6000.png" alt="Перфоратор BOSCH 6000" aria-hidden="true">
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
-                <p class="drill__card-start-price">30500 Р.</p>
-                <a class="drill__card-final-price" href="blank.html">25500 Р.</a>
+                <p class="drill__card-start-price" aria-label="Первоначальная цена 30500 рублей">30500 Р.</p>
+                <a class="drill__card-final-price" href="blank.html" aria-label="Цена со скидкой 25500 рублей">25500 Р.</a>
               </div>
         
               <div class="drill__card">
-                <img class="drill__card-img" width="144" height="128" src="img/bosch-6000.png" alt="Перфоратор BOSCH 6000">
+                <img class="drill__card-img" width="144" height="128" src="img/bosch-6000.png" alt="Перфоратор BOSCH 6000" aria-hidden="true">
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
-                <p class="drill__card-start-price">30500 Р.</p>
-                <a class="drill__card-final-price" href="blank.html">25500 Р.</a>
+                <p class="drill__card-start-price" aria-label="Первоначальная цена 30500 рублей">30500 Р.</p>
+                <a class="drill__card-final-price" href="blank.html" aria-label="Цена со скидкой 25500 рублей">25500 Р.</a>
               </div>
         
               <div class="drill__card">
@@ -222,53 +224,53 @@
                 </button>
                 <button class="drill__card-bookmark-button" type="button">В закладки</button>
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
-                <p class="drill__card-start-price">30500 Р.</p>
-                <a class="drill__card-final-price" href="blank.html">25500 Р.</a>
-                <span class="new-arrival-sticker"></span>
+                <p class="drill__card-start-price" aria-label="Первоначальная цена 30500 рублей">30500 Р.</p>
+                <a class="drill__card-final-price" href="blank.html" aria-label="Цена со скидкой 25500 рублей">25500 Р.</a>
+                <span class="new-arrival-sticker" aria-label="Новое поступление"></span>
               </div>
         
               <div class="drill__card">
-                <img class="drill__card-img" width="127" height="112" src="img/bosch-3000.png" alt="Перфоратор BOSCH 3000">
+                <img class="drill__card-img" width="127" height="112" src="img/bosch-3000.png" alt="Перфоратор BOSCH 3000" aria-hidden="true">
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
-                <p class="drill__card-start-price">22500 Р.</p>
-                <a class="drill__card-final-price" href="blank.html">15500 Р.</a>
-                <span class="new-arrival-sticker"></span>
+                <p class="drill__card-start-price" aria-label="Первоначальная цена 22500 рублей">22500 Р.</p>
+                <a class="drill__card-final-price" href="blank.html" aria-label="Цена со скидкой 15500 рублей">15500 Р.</a>
+                <span class="new-arrival-sticker" aria-label="Новое поступление"></span>
               </div>
         
               <div class="drill__card">
-                <img class="drill__card-img" width="144" height="128" src="img/bosch-6000.png" alt="Перфоратор BOSCH 6000">
+                <img class="drill__card-img" width="144" height="128" src="img/bosch-6000.png" alt="Перфоратор BOSCH 6000" aria-hidden="true">
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
-                <p class="drill__card-start-price">30500 Р.</p>
-                <a class="drill__card-final-price" href="blank.html">25500 Р.</a>
+                <p class="drill__card-start-price" aria-label="Первоначальная цена 30500 рублей">30500 Р.</p>
+                <a class="drill__card-final-price" href="blank.html" aria-label="Цена со скидкой 25500 рублей">25500 Р.</a>
               </div>
         
               <div class="drill__card">
-                <img class="drill__card-img" width="127" height="112" src="img/bosch-2000.png" alt="Перфоратор BOSCH 2000">
+                <img class="drill__card-img" width="127" height="112" src="img/bosch-2000.png" alt="Перфоратор BOSCH 2000" aria-hidden="true">
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 2000</p>
-                <a class="drill__card-final-price" href="blank.html">12500 Р.</a>
-                <span class="new-arrival-sticker"></span>
+                <a class="drill__card-final-price" href="blank.html" aria-label="Цена со скидкой 12500 рублей">12500 Р.</a>
+                <span class="new-arrival-sticker" aria-label="Новое поступление"></span>
               </div>
         
               <div class="drill__card">
-                <img class="drill__card-img" width="127" height="112" src="img/bosch-3000.png" alt="Перфоратор BOSCH 3000">
+                <img class="drill__card-img" width="127" height="112" src="img/bosch-3000.png" alt="Перфоратор BOSCH 3000" aria-hidden="true">
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
-                <p class="drill__card-start-price">22500 Р.</p>
-                <a class="drill__card-final-price" href="blank.html">15500 Р.</a>
-                <span class="new-arrival-sticker"></span>
+                <p class="drill__card-start-price" aria-label="Первоначальная цена 22500 рублей">22500 Р.</p>
+                <a class="drill__card-final-price" href="blank.html" aria-label="Цена со скидкой 15500 рублей">15500 Р.</a>
+                <span class="new-arrival-sticker" aria-label="Новое поступление"></span>
               </div>
         
               <div class="drill__card">
-                <img class="drill__card-img" width="144" height="128" src="img/bosch-6000.png" alt="Перфоратор BOSCH 6000">
+                <img class="drill__card-img" width="144" height="128" src="img/bosch-6000.png" alt="Перфоратор BOSCH 6000" aria-hidden="true">
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
-                <p class="drill__card-start-price">30500 Р.</p>
-                <a class="drill__card-final-price" href="blank.html">25500 Р.</a>
+                <p class="drill__card-start-price" aria-label="Первоначальная цена 30500 рублей">30500 Р.</p>
+                <a class="drill__card-final-price" href="blank.html" aria-label="Цена со скидкой 25500 рублей">25500 Р.</a>
               </div>
         
               <div class="drill__card">
-                <img class="drill__card-img" width="127" height="112" src="img/bosch-2000.png" alt="Перфоратор BOSCH 2000">
+                <img class="drill__card-img" width="127" height="112" src="img/bosch-2000.png" alt="Перфоратор BOSCH 2000" aria-hidden="true">
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 2000</p>
-                <a class="drill__card-final-price" href="blank.html">12500 Р.</a>
-                <span class="new-arrival-sticker"></span>
+                <a class="drill__card-final-price" href="blank.html" aria-label="Цена со скидкой 12500 рублей">12500 Р.</a>
+                <span class="new-arrival-sticker" aria-label="Новое поступление"></span>
               </div>
             </div>
       
@@ -365,9 +367,7 @@
         <a class="cart__order-button" href="blank.html">оформить заказ</a>
         <a class="cart__order-continue" href="blank.html">продолжить покупки</a>
       </div>
-      <svg class="cart__close" onclick="document.getElementById('cart').style.display = 'none'" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.27 10.5l7.43-7.42a1 1 0 000-1.42L19.34.3a1 1 0 00-1.42 0L10.5 7.73 3.08.3a1 1 0 00-1.42 0L.3 1.66a1 1 0 000 1.42l7.43 7.42L.3 17.92a1 1 0 000 1.42l1.35 1.36a1 1 0 001.42 0l7.42-7.43 7.42 7.43a1 1 0 001.42 0l1.36-1.36a1 1 0 000-1.42l-7.43-7.42z" fill="#EE3643"/>
-      </svg>
+      <button class="modal-close" onclick="document.getElementById('cart').style.display = 'none'" aria-label="Закрыть"></button>
   </section>
 
   <script>

@@ -162,32 +162,32 @@
   
         <div class="products__wrapper flex">
           <div class="products__card">
-            <img class="products__card-img" width="184" height="164" src="img/bosch-9000.png" alt="Перфоратор BOSCH 9000">
+            <img class="products__card-img" width="184" height="164" src="img/bosch-9000.png" alt="Перфоратор BOSCH 9000" aria-hidden="true">
             <p class="products__card-desc">Перфоратор BOSCH<br>BFG 9000</p>
-            <p class="products__card-start-price">32500 Р.</p>
-            <a class="products__card-final-price" href="blank.html">25500 Р.</a>
+            <p class="products__card-start-price" aria-label="Первоначальная цена 32500 рублей">32500 Р.</p>
+            <a class="products__card-final-price" href="blank.html" aria-label="Цена со скидкой 25500 рублей">25500 Р.</a>
           </div>
     
           <div class="products__card">
-            <img class="products__card-img" width="127" height="112" src="img/bosch-3000.png" alt="Перфоратор BOSCH 3000">
+            <img class="products__card-img" width="127" height="112" src="img/bosch-3000.png" alt="Перфоратор BOSCH 3000" aria-hidden="true">
             <p class="products__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
-            <p class="products__card-start-price">22500 Р.</p>
-            <a class="products__card-final-price" href="blank.html">15500 Р.</a>
-            <span class="new-arrival-sticker"></span>
+            <p class="products__card-start-price" aria-label="Первоначальная цена 22500 рублей">22500 Р.</p>
+            <a class="products__card-final-price" href="blank.html" aria-label="Цена со скидкой 15500 рублей">15500 Р.</a>
+            <span class="new-arrival-sticker" aria-label="Новое поступление"></span>
           </div>
     
           <div class="products__card">
-            <img class="products__card-img" width="144" height="128" src="img/bosch-6000.png" alt="Перфоратор BOSCH 6000">
+            <img class="products__card-img" width="144" height="128" src="img/bosch-6000.png" alt="Перфоратор BOSCH 6000" aria-hidden="true">
             <p class="products__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
-            <p class="products__card-start-price">30500 Р.</p>
-            <a class="products__card-final-price" href="blank.html">25500 Р.</a>
+            <p class="products__card-start-price" aria-label="Первоначальная цена 30500 рублей">30500 Р.</p>
+            <a class="products__card-final-price" href="blank.html" aria-label="Цена со скидкой 25500 рублей">25500 Р.</a>
           </div>
     
           <div class="products__card">
-            <img class="products__card-img" width="127" height="112" src="img/bosch-2000.png" alt="Перфоратор BOSCH 2000">
+            <img class="products__card-img" width="127" height="112" src="img/bosch-2000.png" alt="Перфоратор BOSCH 2000" aria-hidden="true">
             <p class="products__card-desc">Перфоратор BOSCH<br>BFG 2000</p>
-            <a class="products__card-final-price" href="blank.html">12500 Р.</a>
-            <span class="new-arrival-sticker"></span>
+            <a class="products__card-final-price" href="blank.html" aria-label="Цена со скидкой 15500 рублей">12500 Р.</a>
+            <span class="new-arrival-sticker" aria-label="Новое поступление"></span>
           </div>
           
         </div>
@@ -358,7 +358,7 @@
       <div class="modal__name-wrapper grid">
         <div class="modal__name">
           <label class="modal__label" for="name" >Ваше имя:</label>
-          <input class="modal__input" type="text" name="name" id="name" placeholder="Имя Фамилия">
+          <input class="modal__input" type="text" name="name" id="name" placeholder="Имя Фамилия" autofocus>
         </div>
   
         <div class="modal__email">
@@ -376,18 +376,14 @@
         <input class="modal__submit" type="submit" value="Отправить">
       </div>
     </form>
-    <svg class="modal__close" onclick="document.getElementById('modal').style.display = 'none'" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-      <path d="M13.27 10.5l7.43-7.42a1 1 0 000-1.42L19.34.3a1 1 0 00-1.42 0L10.5 7.73 3.08.3a1 1 0 00-1.42 0L.3 1.66a1 1 0 000 1.42l7.43 7.42L.3 17.92a1 1 0 000 1.42l1.35 1.36a1 1 0 001.42 0l7.42-7.43 7.42 7.43a1 1 0 001.42 0l1.36-1.36a1 1 0 000-1.42l-7.43-7.42z" fill="#EE3643"/>
-    </svg>
+    <button class="modal-close" onclick="document.getElementById('modal').style.display = 'none'" aria-label="Закрыть"></button>
   </section>
 
   <section class="map" id="map">
     <h2 class="map__heading visually-hidden">Компания на Google Карте</h2>
     <img class="map__location" src="img/map1.png" alt="наше местоположение на карте">
     <!-- <iframe class="map__location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.320894615964335!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sqa!4v1603617080568!5m2!1sen!2sqa" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
-    <svg class="map__close" onclick="document.getElementById('map').style.display = 'none'" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-      <path d="M13.27 10.5l7.43-7.42a1 1 0 000-1.42L19.34.3a1 1 0 00-1.42 0L10.5 7.73 3.08.3a1 1 0 00-1.42 0L.3 1.66a1 1 0 000 1.42l7.43 7.42L.3 17.92a1 1 0 000 1.42l1.35 1.36a1 1 0 001.42 0l7.42-7.43 7.42 7.43a1 1 0 001.42 0l1.36-1.36a1 1 0 000-1.42l-7.43-7.42z" fill="#EE3643"/>
-    </svg>
+    <button class="modal-close" onclick="document.getElementById('map').style.display = 'none'" type="button" aria-label="Закрыть"></button>
   </section>
 
 </body>
