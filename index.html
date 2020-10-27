@@ -14,25 +14,27 @@
 
     <div class="header-top">
       <div class="container grid-no-gap">
-        <a class="header__logo-link" href="index.html"><img class="header__logo" src="img/logo-technomart-1.svg" alt="Техномарт"></a>
+        <a class="header__logo-link" href="index.html">
+          <img class="header__logo" src="img/logo-technomart-1.svg" alt="Логотип нашей компании" role="img" aria-label="Логотип нашей компании"> 
+        </a>
       
         <form class="header__search-form" action="#" method="GET">
-          <label class="header__search-label" for="search" title="Поиск на Техномарте">
-            <svg class="header__search-icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <label class="header__search-label" for="search" aria-hidden="true">
+            <svg class="header__search-icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z" fill="#fff"/>
             </svg>            
           </label>
-          <input class="header__search-input" type="search" name="search" id="search" value="" placeholder="Поиск:">
+          <input class="header__search-input" type="search" name="search" id="search" value="" placeholder="Поиск:" aria-label="Поиск на Техномарте">
         </form>
       
         <a class="header__bookmark" href="blank.html">
-          <svg class="header__bookmark-icon" width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="header__bookmark-icon" width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <path d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 00-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 011-1h12a1 1 0 011 1v14z" fill="#fff"/>
           </svg>
           Закладки: <span>0</span>
         </a>
         <a class="header__cart" href="blank.html">
-          <svg class="header__cart-icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="header__cart-icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="#fff"/>
           </svg>
           Корзина: <span>0</span>
@@ -48,17 +50,17 @@
   
         <div class="header__contact">
           <p class="header__phone">
-            <svg class="header__phone-icon" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="header__phone-icon" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path d="M15.57 18.98h-.94a14.53 14.53 0 01-9.36-4.86 16.33 16.33 0 01-4.3-9.9V3.09c.09-.77.47-1.3.9-1.75C2.43.77 3.26.04 4 .02 4.56 0 5.5.4 5.88.92c.33.44.5 1.34.66 2 .15.67.5 1.64.4 2.29-.14 1-1.48 1.43-1.87 2.17a14.03 14.03 0 006.29 7.03c.71-.4 1.35-1.57 2.33-1.6.36 0 .82.18 1.19.29.4.12.74.27 1.1.4.6.23 1.65.53 2 1.03.37.51.57 1.35.5 1.88-.17 1.04-1.89 2.2-2.9 2.57z" fill="#B7BFC8"/>
             </svg> 
-            <span class="header__phone-number">+7 (812) 555-05-55</span>
+            <span class="header__phone-number" aria-label="Наш номер телефона + 7 (812) 555-05-55">+7 (812) 555-05-55</span>
           </p>
-          <small class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
+          <small class="header__address" aria-label="Мы находимся по адресу город Санкт-Петербург, улица Конюшенная, дом 19/8">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
         </div>
       
         <div class="header__sign">
           <a class="header__signin" href="blank.html">
-            <svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path d="M14.17 8.5L5.7 0v6H0v5h5.71v6l8.46-8.5z" fill="#C5C5C5"/>
               <path d="M16.18 15.01h-4.79V17h4.79c2.07 0 2.86-1.81 2.88-3.03V3.03C19.04 1.8 18.26 0 16.18 0h-4.79v1.99h4.79c.8 0 .94.68.96 1.06v10.9c-.02.38-.16 1.06-.96 1.06z" fill="#C5C5C5"/>
             </svg>
@@ -96,32 +98,48 @@
           <article class="features__item">
             <h3 class="features__title">Материалы</h3>
             <a class="features__link" href="blank.html">на любой вкус</a>
-            <img class="features__icon" src="img/icon-1.svg" alt="">
-            <span class="features__new-arrival">new</span>
+            <svg  class="features__icon" width="44" height="65" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path d="M37.91 30.44V41.3s.1 2.73-2.82 2.73c-3.07 0-3.13-2.73-3.13-2.73v-6.42c0-.24-.34-1.9-2.32-1.9-2.62 0-2.67 1.87-2.67 1.87v19.22s.03 1.86-2.46 1.86C22 55.94 22 53.96 22 53.96V40.02s0-2.95-3.8-2.95c-4.06 0-3.97 3.13-3.97 3.13v3.72s-.12 2.95-4.69 2.95-4.63-4.51-4.63-4.51V29.94C3.17 28.98 0 26.67 0 26.67V56s2.99 9 22 9c19.01 0 22-8.7 22-8.7V26.68c-2.94 2.83-6.09 3.77-6.09 3.77z" fill="#fff"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0C1.69 0 0 19.88 0 19.88v3.06C8.44 29.19 22 29 22 29s13.56.19 22-6.06v-3.06S42.31 0 22 0zm0 25c-11.75 0-14.31-2.38-14.31-2.38C13.94 19.75 22 19.88 22 19.88s8.06-.12 14.31 2.75c0 0-2.56 2.38-14.31 2.38zM4.31 15.56s8.13-2.94 17.69-2.94 17.69 2.94 17.69 2.94C35.13 2.62 22 3.06 22 3.06S8.87 2.62 4.31 15.56z" fill="#fff"/>
+            </svg>
+            <span class="features__new-arrival"></span>
           </article>
     
           <article class="features__item">
             <h3 class="features__title">Инструмент</h3>
             <a class="features__link" href="blank.html">на все случаи</a>
-            <img class="features__icon" src="img/icon-2.svg" alt="">
+            <svg class="features__icon" width="75" height="61" fill="none" xmlns="http://www.w3.org/2000/svg"  aria-hidden="true" focusable="false">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.1 0C.17 0 0 2.04 0 2.04v15.81c0 2.94 2.9 3 2.9 3h9.01c1.94 0 1.6 1.34 1.6 1.34s-2.47 13-2.73 15.21C10.5 39.6 8.9 41 8.9 41l-3 1.67c-.87.47-.87 2.2-.87 2.2h30.89v-.73c0-1.47-6.47-3.14-9.07-3.4-2.6-.27-2.07-2-2.07-2l1.06-7.81h3L30 23.06h-3l.33-2.74 8.6-.13c5.81-.6 10.02-4.07 10.02-4.07V4.1C41.34.84 33.99 0 33.99 0H2.1zM60.4 8.02h13.48c.58 0 1.05 1.1 1.05 2.48 0 1.37-.47 2.48-1.05 2.48H60.4c-.62 2.3-2.08 3.9-3.77 3.9h-7.54V4.13h7.55c1.69 0 3.14 1.6 3.76 3.89zM6.9 61c-1.87 0-1.87-2.05-1.87-2.05v-11h30.89v11.07c0 1.8-2 1.98-2 1.98H6.9zM36 4.97v-.03a1 1 0 00-1-1H5.03a1 1 0 00-1 1v.03a1 1 0 001 1H35a1 1 0 001-1z" fill="#fff"/>
+            </svg>
           </article>
     
           <article class="features__item">
             <h3 class="features__title">Техника</h3>
             <a class="features__link" href="blank.html">для стройки</a>
-            <img class="features__icon" src="img/icon-3.svg" alt="">
+            <svg class="features__icon" width="78" height="62" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 45.88a16.13 16.13 0 1132.25 0 16.13 16.13 0 01-32.25 0zm10.96 5.16a7.3 7.3 0 1010.33-10.33 7.3 7.3 0 00-10.33 10.33zm49.9-5.17a8.06 8.06 0 100 16.13 8.06 8.06 0 000-16.13zm-5.07 8.07a5.06 5.06 0 1010.13 0 5.06 5.06 0 00-10.13 0z" fill="#fff"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M75.44 31.31l2.46 18.42s.74 3.15-2.9 3.15h-1.95a12.22 12.22 0 00-24.39 0H38.5A23.44 23.44 0 003.05 26.43C3 23.45 3 12.52 5.3 6.16c0 0 1.07-2.54 3.44-3.17 2.38-.63 24.75-3 24.75-3s2.31.06 3.13 1.88c.8 1.8 10.56 21.87 10.56 21.87L59 25.13v-5.3h4V14h3v11.95l5.81.68s3.08.54 3.63 4.68zM16.13 19.83h6.95V6.17h-6.95v13.66zm16.95 0h-6.95V6.17h6.95v13.66zM49 36h4.02v-7H49v7zm11.02 0H56v-7h4.02v7zM63 36h4.02v-7H63v7z" fill="#fff"/>
+            </svg>
+            
           </article>
     
           <article class="features__item">
             <h3 class="features__title">Скидки 50%</h3>
             <a class="features__link" href="blank.html">на 350 товаров</a>
-            <img class="features__icon" src="img/icon-4.svg" alt="">
+            <svg class="features__icon" width="59" height="72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M58.3 21.2a3 3 0 00-2.4-1.1H17.3l-2.5-7.3H3.1a3 3 0 00-3 3 3 3 0 003 3h7.4L24 58.3H49a3 3 0 003-3 3 3 0 00-3-2.9H28.3l-1.7-5h23a3 3 0 003-2.2l6.2-21.5a3 3 0 00-.5-2.6zm-7.7 9.6h-4.9V26H52l-1.4 4.8zM32.9 26v4.8h6.8V26H33zm6.8 10.7v4.8H33v-4.8h6.8zM27 30.8V26h-7.6l1.6 4.8h6zm-4 6h4v4.7h-2.3l-1.7-4.8zm22.8 0v4.7h1.7l1.4-4.8h-3z" fill="#fff"/>
+              <path d="M27.4 71.9c3.2 0 5.8-2.6 5.8-5.7 0-3.2-2.6-5.7-5.8-5.7a5.7 5.7 0 00-5.8 5.7c0 3.1 2.6 5.7 5.8 5.7zM44.8 71.9c3.2 0 5.8-2.6 5.8-5.7 0-3.2-2.6-5.7-5.8-5.7a5.7 5.7 0 00-5.7 5.7c0 3.1 2.6 5.7 5.7 5.7zM29.3 10.6L37 16a2 2 0 002.8-.5 2 2 0 00-.5-2.9L36.8 11l9.5-5 4.6 11.9h4.4l-6-15.5A2 2 0 0048 1a2 2 0 00-1.6.1L33 8.2l-3-2.1a2 2 0 00-2.7.4L18.9 17l-.4.7h5.1l5.7-7.2z" fill="#fff"/>
+            </svg>
           </article>
     
           <article class="features__item">
             <h3 class="features__title">Доставка</h3>
             <a class="features__link" href="blank.html">бесплатно</a>
-            <img class="features__icon" src="img/icon-5.svg" alt="">
+            <svg class="features__icon" width="78" height="63" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path d="M25.98 63a7.5 7.5 0 100-15 7.5 7.5 0 000 15zM59.98 63a7.5 7.5 0 100-15 7.5 7.5 0 000 15z" fill="#fff"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.06 0H64s14 14.81 14 33.69v15.25S77.81 53 74.87 53h-1.7a13.5 13.5 0 00-26.52 0h-7.4a13.5 13.5 0 00-26.53 0h-2.1s-2.56-.62-2.56-3.81V33.57l14.75-.76s5.49-.6 6.3-3.75L5.44 27.8a3.37 3.37 0 110-6.75h9.05l8.31-.42s8.18-.61 8.94-3.8l-.2-.05-28.08-1.84a3.47 3.47 0 110-6.94h4.6V3.12S7.86 0 11.06 0zM52 8.94v15h15.81l-5.75-15H52z" fill="#fff"/>
+            </svg>
+            
           </article>
     
           <article class="features__slider">
@@ -155,7 +173,7 @@
             <p class="products__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
             <p class="products__card-start-price">22500 Р.</p>
             <a class="products__card-final-price" href="blank.html">15500 Р.</a>
-            <span class="features__new-arrival">new</span>
+            <span class="new-arrival-sticker"></span>
           </div>
     
           <div class="products__card">
@@ -169,7 +187,7 @@
             <img class="products__card-img" width="127" height="112" src="img/bosch-2000.png" alt="Перфоратор BOSCH 2000">
             <p class="products__card-desc">Перфоратор BOSCH<br>BFG 2000</p>
             <a class="products__card-final-price" href="blank.html">12500 Р.</a>
-            <span class="features__new-arrival">new</span>
+            <span class="new-arrival-sticker"></span>
           </div>
           
         </div>
@@ -213,7 +231,7 @@
           </a>
     
           <a class="maker" href="blank.html">
-            <h2 class="maker__brend">AEG</h2>
+            <h2 class="maker__brend visually-hidden">AEG</h2>
             <img class="maker__logo" width="151" height="96" src="img/aeg.png" alt="Компания AEG">
           </a>
     
@@ -237,7 +255,8 @@
             <li class="services__item"><a class="services__link" href="blank.html">Гарантия</a></li>
             <li class="services__item"><a class="services__link" href="blank.html">Кредит</a></li>
           </ul>
-      
+          <img class="services__list-right-shadow" src="img/shadow.png" alt="Тень">
+          
           <section class="services__info">
             <h3 class="services__type">Доставка</h3>
             <pre class="services__text">
@@ -271,8 +290,8 @@
         <section class="address">
           <h2 class="address__heading">Контакты</h2>
           <p class="address__text">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-          <img class="address__map" width="300" height="158" src="img/map.png" alt="Наша компания на карте">
-          <a class="address__link" href="blank.html">Заблудились? Напишите нам!</a>
+          <img class="address__map" onclick="document.getElementById('map').style.display = 'block'" width="300" height="158" src="img/map.png" alt="Наша компания на карте">
+          <button class="address__link" onclick="document.getElementById('modal').style.display = 'block'">Заблудились? Напишите нам!</button>
         </section>
       </div>
     </div>
@@ -333,9 +352,10 @@
 
   </footer>
   
-  <section class="modal">
+  <section class="modal" id="modal">
+    <h2 class="modal__heading visually-hidden">Обратная связь</h2>
     <form class="modal__form" action="#" method="POST">
-      <div class="modal__block1 grid">
+      <div class="modal__name-wrapper grid">
         <div class="modal__name">
           <label class="modal__label" for="name" >Ваше имя:</label>
           <input class="modal__input" type="text" name="name" id="name" placeholder="Имя Фамилия">
@@ -352,20 +372,22 @@
         </div>
       </div>
 
-      <div class="modal__block2">
+      <div class="modal__submit-wrapper">
         <input class="modal__submit" type="submit" value="Отправить">
       </div>
     </form>
-    <svg class="modal__close" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="modal__close" onclick="document.getElementById('modal').style.display = 'none'" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
       <path d="M13.27 10.5l7.43-7.42a1 1 0 000-1.42L19.34.3a1 1 0 00-1.42 0L10.5 7.73 3.08.3a1 1 0 00-1.42 0L.3 1.66a1 1 0 000 1.42l7.43 7.42L.3 17.92a1 1 0 000 1.42l1.35 1.36a1 1 0 001.42 0l7.42-7.43 7.42 7.43a1 1 0 001.42 0l1.36-1.36a1 1 0 000-1.42l-7.43-7.42z" fill="#EE3643"/>
     </svg>
   </section>
 
-  <section class="map">
-    <img class="map__location" src="img/map1.png" alt="наша компания на карте">
-    <!-- <svg class="map__close" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <section class="map" id="map">
+    <h2 class="map__heading visually-hidden">Компания на Google Карте</h2>
+    <img class="map__location" src="img/map1.png" alt="наше местоположение на карте">
+    <!-- <iframe class="map__location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.320894615964335!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sqa!4v1603617080568!5m2!1sen!2sqa" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+    <svg class="map__close" onclick="document.getElementById('map').style.display = 'none'" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
       <path d="M13.27 10.5l7.43-7.42a1 1 0 000-1.42L19.34.3a1 1 0 00-1.42 0L10.5 7.73 3.08.3a1 1 0 00-1.42 0L.3 1.66a1 1 0 000 1.42l7.43 7.42L.3 17.92a1 1 0 000 1.42l1.35 1.36a1 1 0 001.42 0l7.42-7.43 7.42 7.43a1 1 0 001.42 0l1.36-1.36a1 1 0 000-1.42l-7.43-7.42z" fill="#EE3643"/>
-    </svg> -->
+    </svg>
   </section>
 
 </body>

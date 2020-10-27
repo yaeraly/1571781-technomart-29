@@ -113,40 +113,79 @@
             
             <form class="filter__form" action="#" method="GET">
               <div class="filter__price-wrapper">
-                <input class="filter__price-range" type="range" min="0" max="3000">
+                <input class="filter__price-range" type="range" min="0" max="34200" value="30000" step="300" id="slider">
+                <span class="filter__price-range-slider"></span>
+                <span class="filter__price-range-progress-bar" id="progress-bar"></span>
               </div>
-              <div class="filter__min-max-wrapper"><span class="filter__min-price">0</span> - <span class="filter__max-price">30000</span></div>
+              <div class="filter__min-max-wrapper"><span class="filter__min-price">0</span> - <span class="filter__max-price" id="max-price">30000</span></div>
               <hr class="horizontal-line">
     
               <p class="filter__makers">производители:</p>
-              <input class="filter__maker-input" type="checkbox" name="makers" id="bosch" value="BOSCH" checked>
-              <label class="filter__maker-label" for="bosch">bosch</label><br>
+              <div class="filter__makers-wrapper">
+                <label class="filter__maker-label" for="bosch">
+                  <input class="filter__maker-input" type="checkbox" name="makers" id="bosch" value="BOSCH" checked>
+                  bosch
+                  <span class="filter__maker-checkmark"></span>
+                </label><br>
+              </div>
       
-              <input class="filter__maker-input" type="checkbox" name="makers" id="interskol" value="interskol">
-              <label class="filter__maker-label" for="interskol">ИНТЕРСКОЛ</label><br>
+              <div class="filter__makers-wrapper">
+                <label class="filter__maker-label" for="interskol">
+                  <input class="filter__maker-input" type="checkbox" name="makers" id="interskol" value="interskol">
+                  ИНТЕРСКОЛ
+                  <span class="filter__maker-checkmark"></span>
+                </label><br>
+              </div>
       
-              <input class="filter__maker-input" type="checkbox" name="makers" id="makita" value="makita" checked>
-              <label class="filter__maker-label" for="makita">Makita</label><br>
-      
-              <input class="filter__maker-input" type="checkbox" name="makers" id="dewalt" value="dewalt">
-              <label class="filter__maker-label" for="dewalt">Dewalt</label><br>
-      
-              <input class="filter__maker-input" type="checkbox" name="makers" id="hitachi" value="hitachi">
-              <label class="filter__maker-label" for="hitachi">Hitachi</label><br>
+              <div class="filter__makers-wrapper">
+                <label class="filter__maker-label" for="makita">
+                  <input class="filter__maker-input" type="checkbox" name="makers" id="makita" value="makita" checked>
+                  Makita
+                  <span class="filter__maker-checkmark"></span>
+                </label><br>
+              </div>
+              
+              <div class="filter__makers-wrapper">
+                <label class="filter__maker-label" for="dewalt">
+                  <input class="filter__maker-input" type="checkbox" name="makers" id="dewalt" value="dewalt">
+                  Dewalt
+                  <span class="filter__maker-checkmark"></span>
+                </label><br>
+              </div>
+              
+              <div class="filter__makers-wrapper">
+                <label class="filter__maker-label" for="hitachi">
+                  <input class="filter__maker-input" type="checkbox" name="makers" id="hitachi" value="hitachi">
+                  Hitachi
+                  <span class="filter__maker-checkmark"></span>
+                </label><br>
+              </div>
               <hr class="horizontal-line">
       
               <p class="filter__charger">питание:</p>
-              <input class="filter__charger-input" type="radio" name="battery" id="battery" value="" checked>
-              <label class="filter__charger-label" for="battery">Аккумуляторные</label><br>
+              <div class="filter__charger-label-wrapper">
+                <label class="filter__charger-label" for="battery">
+                  <input class="filter__charger-input" type="radio" name="battery" id="battery" value="Аккумуляторные" checked>
+                  Аккумуляторные
+                  <span class="filter__charger-checkmark"></span>
+                </label><br>
+              </div>
       
-              <input class="filter__charger-input" type="radio" name="power" id="PowerOverNet" value="">
-              <label class="filter__charger-label" for="PowerOverNet">Сетевые</label><br>
+              <div class="filter__charger-label-wrapper">
+                <label class="filter__charger-label" for="PowerOverNet">
+                  <input class="filter__charger-input" type="radio" name="battery" id="PowerOverNet" value="Сетевые">
+                  Сетевые
+                  <span class="filter__charger-checkmark"></span>
+                </label><br>
+              </div>
+
       
               <input class="filter__show-button" type="submit" value="ПОКАЗАТЬ">
             </form>
           </aside>
     
           <section class="sort">
+            <h2 class="sort__heading">сортировка товара</h2>
             <div class="sort__drill">
               <span class="sort__drill-text">сортировка:</span>
     
@@ -175,17 +214,17 @@
               </div>
         
               <div class="drill__card">
-                <button class="drill__card-buy-button" type="button">
+                <button class="drill__card-buy-button" type="button" onclick="document.getElementById('cart').style.display='inline-block'">
                   <svg class="drill__cart-icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="#fff"/>
                   </svg>                
                   купить
                 </button>
                 <button class="drill__card-bookmark-button" type="button">В закладки</button>
-                <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 9000</p>
+                <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
                 <p class="drill__card-start-price">30500 Р.</p>
                 <a class="drill__card-final-price" href="blank.html">25500 Р.</a>
-                <span class="features__new-arrival">new</span>
+                <span class="new-arrival-sticker"></span>
               </div>
         
               <div class="drill__card">
@@ -193,7 +232,7 @@
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
                 <p class="drill__card-start-price">22500 Р.</p>
                 <a class="drill__card-final-price" href="blank.html">15500 Р.</a>
-                <span class="features__new-arrival">new</span>
+                <span class="new-arrival-sticker"></span>
               </div>
         
               <div class="drill__card">
@@ -207,7 +246,7 @@
                 <img class="drill__card-img" width="127" height="112" src="img/bosch-2000.png" alt="Перфоратор BOSCH 2000">
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 2000</p>
                 <a class="drill__card-final-price" href="blank.html">12500 Р.</a>
-                <span class="features__new-arrival">new</span>
+                <span class="new-arrival-sticker"></span>
               </div>
         
               <div class="drill__card">
@@ -215,7 +254,7 @@
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
                 <p class="drill__card-start-price">22500 Р.</p>
                 <a class="drill__card-final-price" href="blank.html">15500 Р.</a>
-                <span class="features__new-arrival">new</span>
+                <span class="new-arrival-sticker"></span>
               </div>
         
               <div class="drill__card">
@@ -229,7 +268,7 @@
                 <img class="drill__card-img" width="127" height="112" src="img/bosch-2000.png" alt="Перфоратор BOSCH 2000">
                 <p class="drill__card-desc">Перфоратор BOSCH<br>BFG 2000</p>
                 <a class="drill__card-final-price" href="blank.html">12500 Р.</a>
-                <span class="features__new-arrival">new</span>
+                <span class="new-arrival-sticker"></span>
               </div>
             </div>
       
@@ -311,8 +350,9 @@
 
   </footer>
 
-  <section class="cart">
-      <div class="cart__block1">
+  <section class="cart" id="cart">
+    <h2 class="cart__heading visually-hidden">Добавление заказа в корзину</h2>
+      <div class="cart__top-wrapper">
         <p class="cart__text">Товар добавлен в корзину!</p>
         <div class="cart__icon-wrapper">
           <svg class="cart__icon-mark" width="40" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -321,14 +361,27 @@
         </div>
       </div>
 
-      <div class="cart__block2">
-        <a class="cart__order-button" href="#">оформить заказ</a>
-        <a class="cart__order-continue" href="#">продолжить покупки</a>
+      <div class="cart__bottom-wrapper">
+        <a class="cart__order-button" href="blank.html">оформить заказ</a>
+        <a class="cart__order-continue" href="blank.html">продолжить покупки</a>
       </div>
-      <svg class="cart__close" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="cart__close" onclick="document.getElementById('cart').style.display = 'none'" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.27 10.5l7.43-7.42a1 1 0 000-1.42L19.34.3a1 1 0 00-1.42 0L10.5 7.73 3.08.3a1 1 0 00-1.42 0L.3 1.66a1 1 0 000 1.42l7.43 7.42L.3 17.92a1 1 0 000 1.42l1.35 1.36a1 1 0 001.42 0l7.42-7.43 7.42 7.43a1 1 0 001.42 0l1.36-1.36a1 1 0 000-1.42l-7.43-7.42z" fill="#EE3643"/>
       </svg>
   </section>
+
+  <script>
+    var slider = document.getElementById("slider");
+    var max_price = document.getElementById("max-price");
+    var progress_bar = document.getElementById("progress-bar");
+
+
+    max_price.innerHTML = slider.value;
+    slider.oninput = function() {
+      max_price.innerHTML = this.value;
+      progress_bar.style.width = (this.value / 550) + "%";
+    }
+  </script>
 
 </body>
 
