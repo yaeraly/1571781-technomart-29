@@ -15,16 +15,16 @@
     <div class="header-top">
       <div class="container grid-no-gap">
         <a class="header__logo-link" href="index.html">
-          <img class="header__logo" src="img/logo-technomart-1.svg" alt="Логотип нашей компании" role="img" aria-label="Логотип нашей компании"> 
+          <img class="header__logo" src="img/logo-technomart-1.svg" width="108" height="18" alt="Логотип нашей компании" aria-label="Логотип нашей компании"> 
         </a>
       
         <form class="header__search-form" action="#" method="GET">
+          <input class="header__search-input" type="search" name="search" id="search" value="" placeholder="Поиск:" aria-label="Поиск на Техномарте">
           <label class="header__search-label" for="search" aria-hidden="true">
             <svg class="header__search-icon" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z" fill="#fff"/>
             </svg>            
           </label>
-          <input class="header__search-input" type="search" name="search" id="search" value="" placeholder="Поиск:" aria-label="Поиск на Техномарте">
         </form>
       
         <a class="header__bookmark" href="blank.html">
@@ -53,9 +53,9 @@
             <svg class="header__phone-icon" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path d="M15.57 18.98h-.94a14.53 14.53 0 01-9.36-4.86 16.33 16.33 0 01-4.3-9.9V3.09c.09-.77.47-1.3.9-1.75C2.43.77 3.26.04 4 .02 4.56 0 5.5.4 5.88.92c.33.44.5 1.34.66 2 .15.67.5 1.64.4 2.29-.14 1-1.48 1.43-1.87 2.17a14.03 14.03 0 006.29 7.03c.71-.4 1.35-1.57 2.33-1.6.36 0 .82.18 1.19.29.4.12.74.27 1.1.4.6.23 1.65.53 2 1.03.37.51.57 1.35.5 1.88-.17 1.04-1.89 2.2-2.9 2.57z" fill="#B7BFC8"/>
             </svg> 
-            <span class="header__phone-number" aria-label="Наш номер телефона + 7 (812) 555-05-55">+7 (812) 555-05-55</span>
+            <a class="header__phone-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
-          <small class="header__address" aria-label="Мы находимся по адресу город Санкт-Петербург, улица Конюшенная, дом 19/8">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
+          <small class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
         </div>
       
         <div class="header__sign">
@@ -102,7 +102,7 @@
               <path d="M37.91 30.44V41.3s.1 2.73-2.82 2.73c-3.07 0-3.13-2.73-3.13-2.73v-6.42c0-.24-.34-1.9-2.32-1.9-2.62 0-2.67 1.87-2.67 1.87v19.22s.03 1.86-2.46 1.86C22 55.94 22 53.96 22 53.96V40.02s0-2.95-3.8-2.95c-4.06 0-3.97 3.13-3.97 3.13v3.72s-.12 2.95-4.69 2.95-4.63-4.51-4.63-4.51V29.94C3.17 28.98 0 26.67 0 26.67V56s2.99 9 22 9c19.01 0 22-8.7 22-8.7V26.68c-2.94 2.83-6.09 3.77-6.09 3.77z" fill="#fff"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0C1.69 0 0 19.88 0 19.88v3.06C8.44 29.19 22 29 22 29s13.56.19 22-6.06v-3.06S42.31 0 22 0zm0 25c-11.75 0-14.31-2.38-14.31-2.38C13.94 19.75 22 19.88 22 19.88s8.06-.12 14.31 2.75c0 0-2.56 2.38-14.31 2.38zM4.31 15.56s8.13-2.94 17.69-2.94 17.69 2.94 17.69 2.94C35.13 2.62 22 3.06 22 3.06S8.87 2.62 4.31 15.56z" fill="#fff"/>
             </svg>
-            <span class="features__new-arrival"></span>
+            <span class="new-arrival-sticker"></span>
           </article>
     
           <article class="features__item">
@@ -144,11 +144,24 @@
     
           <article class="features__slider">
             <h3 class="features__slider-title">Перфораторы</h3>
+            <h3 class="features__slider-title">Дрели</h3>
             <p class="features__slider-desc">Настоящие мужские игрушки</p>
-            <a class="features__slider-link" href="blank.html">открыть каталог</a>
-            <img class="features__slider-left" src="img/icon-left.svg" alt="Налево">
-            <img class="features__slider-right" src="img/icon-right.svg" alt="Направо">
-            <img class="features__slider-photo" width="620" height="266" src="img/slider.jpg" alt="Строитель с перфоратором">
+            <p class="features__slider-desc">Соседям на радость!</p>
+            <a class="features__slider-link" href="catalog.html">открыть каталог</a>
+
+            <svg class="features__slider-left" width="22" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.92.94l2 2.05L4.91 20.44l17.07 17.5-2 2.05L.9 20.44 19.92.94z" fill="#fff"/>
+            </svg>
+            <svg class="features__slider-right" width="22" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.08 39.06L.08 37l17.01-17.45L.02 2.06l2-2.05L21.1 19.56 2.08 39.06z" fill="#fff"/>
+            </svg>
+            
+            <img class="features__slider-photo" width="620" height="266" src="img/slider1.jpg" alt="Строитель с перфоратором">
+            <img class="features__slider-photo" width="620" height="266" src="img/slider2.jpg" alt="Строитель с дрелью">
+            <ul class="features__slider-indicator-list">
+              <li class="features__slider-indicator-item"></li>
+              <li class="features__slider-indicator-item"></li>
+            </ul>
           </article>
         </div>
       </section>
@@ -163,31 +176,57 @@
         <div class="products__wrapper flex">
           <div class="products__card">
             <img class="products__card-img" width="184" height="164" src="img/bosch-9000.png" alt="Перфоратор BOSCH 9000" aria-hidden="true">
+            <button class="products__card-buy-button" type="button">
+              <svg class="products__card-icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="#fff"/>
+              </svg>                
+              купить
+            </button>
+            <button class="products__card-bookmark-button" type="button">В закладки</button>
             <p class="products__card-desc">Перфоратор BOSCH<br>BFG 9000</p>
-            <p class="products__card-start-price" aria-label="Первоначальная цена 32500 рублей">32500 Р.</p>
+            <p class="products__card-start-price">32500 Р.</p>
             <a class="products__card-final-price" href="blank.html" aria-label="Цена со скидкой 25500 рублей">25500 Р.</a>
           </div>
     
           <div class="products__card">
             <img class="products__card-img" width="127" height="112" src="img/bosch-3000.png" alt="Перфоратор BOSCH 3000" aria-hidden="true">
+            <button class="products__card-buy-button" type="button">
+              <svg class="products__card-icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="#fff"/>
+              </svg>                
+              купить
+            </button>
+            <button class="products__card-bookmark-button" type="button">В закладки</button>
             <p class="products__card-desc">Перфоратор BOSCH<br>BFG 3000</p>
-            <p class="products__card-start-price" aria-label="Первоначальная цена 22500 рублей">22500 Р.</p>
+            <p class="products__card-start-price">22500 Р.</p>
             <a class="products__card-final-price" href="blank.html" aria-label="Цена со скидкой 15500 рублей">15500 Р.</a>
-            <span class="new-arrival-sticker" aria-label="Новое поступление"></span>
           </div>
     
           <div class="products__card">
             <img class="products__card-img" width="144" height="128" src="img/bosch-6000.png" alt="Перфоратор BOSCH 6000" aria-hidden="true">
+            <button class="products__card-buy-button" type="button">
+              <svg class="products__card-icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="#fff"/>
+              </svg>                
+              купить
+            </button>
+            <button class="products__card-bookmark-button" type="button">В закладки</button>
             <p class="products__card-desc">Перфоратор BOSCH<br>BFG 6000</p>
-            <p class="products__card-start-price" aria-label="Первоначальная цена 30500 рублей">30500 Р.</p>
+            <p class="products__card-start-price">30500 Р.</p>
             <a class="products__card-final-price" href="blank.html" aria-label="Цена со скидкой 25500 рублей">25500 Р.</a>
           </div>
     
           <div class="products__card">
             <img class="products__card-img" width="127" height="112" src="img/bosch-2000.png" alt="Перфоратор BOSCH 2000" aria-hidden="true">
+            <button class="products__card-buy-button" type="button">
+              <svg class="products__card-icon" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z" fill="#fff"/>
+              </svg>                
+              купить
+            </button>
+            <button class="products__card-bookmark-button" type="button">В закладки</button>
             <p class="products__card-desc">Перфоратор BOSCH<br>BFG 2000</p>
             <a class="products__card-final-price" href="blank.html" aria-label="Цена со скидкой 15500 рублей">12500 Р.</a>
-            <span class="new-arrival-sticker" aria-label="Новое поступление"></span>
           </div>
           
         </div>
@@ -250,21 +289,42 @@
         <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
     
         <div class="services__wrapper grid">
-          <ul class="services__list">
-            <li class="services__item active"><a class="services__link active" href="blank.html">Доставка</a></li>
-            <li class="services__item"><a class="services__link" href="blank.html">Гарантия</a></li>
-            <li class="services__item"><a class="services__link" href="blank.html">Кредит</a></li>
-          </ul>
-          <img class="services__list-right-shadow" src="img/shadow.png" alt="Тень">
+          <div class="services__list-wrapper">
+            <ul class="services__list">
+              <li class="services__item active"><a class="services__link active" href="blank.html">Доставка</a></li>
+              <li class="services__item"><a class="services__link" href="blank.html">Гарантия</a></li>
+              <li class="services__item"><a class="services__link" href="blank.html">Кредит</a></li>
+            </ul>
+          </div>
+          <img class="services__list-right-shadow" src="img/shadow.png" width="10" height="279" alt="">
           
           <section class="services__info">
             <h3 class="services__type">Доставка</h3>
-            <pre class="services__text">
+            <pre class="services__info-text">
 Мы с удовольствием доставим ваш товар прямо 
 к вашему подъезду совершенно бесплатно!
 Ведь мы неплохо заработаем, 
 поднимая его на ваш этаж!
             </pre>
+            
+          </section>
+          <section class="services__info">
+            <h3 class="services__type">Гарантия</h3>
+            <pre class="services__text">
+Если купленный у нас товар поломается или заискрит,
+а также в случае пожара, спровоцированного его
+возгоранием,  вы всегда можете быть уверены в нашей
+гарантии. Мы обменяем сгоревший товар на новый.
+Дом уж восстановите как-нибудь сами.
+            </pre>
+          </section>
+          <section class="services__info">
+            <h3 class="services__type">Кредит</h3>
+            <pre class="services__text">
+Залезть в долговую яму стало проще!
+Кредитные консультанты придут вам на помощь.
+            </pre>
+            <a class="services__info-link" href="blank.html">отправить заявку</a>
           </section>
         </div>
       </div>
@@ -290,8 +350,8 @@
         <section class="address">
           <h2 class="address__heading">Контакты</h2>
           <p class="address__text">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-          <img class="address__map" onclick="document.getElementById('map').style.display = 'block'" width="300" height="158" src="img/map.png" alt="Наша компания на карте">
-          <button class="address__link" onclick="document.getElementById('modal').style.display = 'block'">Заблудились? Напишите нам!</button>
+          <img class="address__map" width="300" height="158" src="img/map.png" alt="Наша компания на карте">
+          <button class="address__link">Заблудились? Напишите нам!</button>
         </section>
       </div>
     </div>
@@ -304,7 +364,11 @@
 
     <div class="footer-top">
       <div class="container grid">
-        <a class="footer__logo-link" href="index.html"><img class="footer__logo" src="img/logo-technomart-2.svg" alt="Техномарт"></a>
+        <a class="footer__logo-link" href="index.html">
+          <svg class="footer__logo" width="138" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M132.7 3.4v18.9H130V3.4h-4.8V1.3h12.3v2.1h-4.8zM122.3 14.5a3.86 3.86 0 01-1.77 1.26c-.71.25-1.56.38-2.54.38a15.32 15.32 0 01-3-.3v6.45h-2.7V1.6c.76-.22 1.53-.38 2.3-.47.77-.09 1.6-.13 2.5-.13 1.2 0 2.22.12 3.06.37.84.25 1.52.67 2.04 1.25s.9 1.35 1.14 2.3a15 15 0 01.36 3.58c0 1.46-.11 2.68-.34 3.66a5.9 5.9 0 01-1.05 2.35zm-1.53-8.71a4.22 4.22 0 00-.7-1.71 2.55 2.55 0 00-1.22-.89 5.37 5.37 0 00-1.76-.25H115v11.1h2.1c.68 0 1.27-.09 1.76-.26s.9-.46 1.21-.88c.32-.42.56-1 .7-1.71.16-.72.23-1.62.23-2.7s-.07-1.98-.22-2.7zm-15.23 11.1h-6l-1.35 5.4h-2.7l5.1-21h3.9l5.1 21h-2.7l-1.35-5.4zM102.6 4.3h-.12L100 14.8h5.1L102.6 4.3zM89.64 6.7h-.15l-4.35 12.9h-2.7L78.1 6.7h-.15l-.9 15.6h-2.7l1.2-21h3.3l4.9 14.4h.11l4.9-14.4h3.3l1.2 21h-2.7l-.9-15.6zM69.48 20.35a4.71 4.71 0 01-2.02 1.74c-.8.34-1.7.5-2.72.5a6.81 6.81 0 01-2.71-.5A4.71 4.71 0 0160 20.35a9.22 9.22 0 01-1.27-3.32 26.26 26.26 0 01-.44-5.23c0-2.1.15-3.85.44-5.24.29-1.39.71-2.5 1.27-3.31a4.71 4.71 0 012.03-1.74c.79-.34 1.7-.51 2.71-.51 1.02 0 1.93.17 2.72.5.79.35 1.46.93 2.02 1.75s.99 1.92 1.28 3.31c.29 1.4.43 3.14.43 5.24s-.14 3.84-.43 5.23a9.22 9.22 0 01-1.28 3.32zm-1.3-13a10.48 10.48 0 00-.83-2.75 3.18 3.18 0 00-1.2-1.41 2.83 2.83 0 00-1.4-.4c-.49 0-.96.14-1.42.4-.46.26-.86.73-1.2 1.4-.34.69-.61 1.6-.82 2.77a25.69 25.69 0 00-.32 4.44c0 1.8.1 3.28.32 4.44.2 1.16.48 2.08.82 2.76.34.68.74 1.15 1.2 1.4.46.27.93.4 1.41.4.48 0 .95-.13 1.41-.4.46-.25.86-.72 1.2-1.4.34-.68.62-1.6.83-2.76.2-1.16.31-2.64.31-4.44 0-1.8-.1-3.28-.31-4.44zM51.99 12.7h-6.3v9.6H43v-21h2.7v9.3H52V1.3h2.7v21H52v-9.6zm-14.25 9.6l-3.75-9-3.75 9h-2.7l4.5-10.8L28 1.3h2.7L34 9.7l3.3-8.4H40l-4.05 10.2 4.5 10.8h-2.7zM15.7 1.3h10.2v2.1h-7.5v6.9H25v2.1h-6.6v7.8h7.5v2.1H15.7v-21zm-7.2 21H5.8V3.4H1V1.3h12.3v2.1H8.5v18.9z" fill="#fff"/>
+          </svg>
+        </a>
     
         <ul class="footer__nav-list">
           <li class="footer__nav-item"><a class="footer__nav-link" href="blank.html">Компания</a></li>
@@ -318,7 +382,7 @@
   
     <div class="footer-center">
       <div class="container grid">
-        <p class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+        <p class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="footer__address-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
     
         <ul class="footer__features-list">
           <li class="footer__features-item"><a class="footer__features-link" href="blank.html">Материалы</a></li>
@@ -334,25 +398,31 @@
         <p class="footer__copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
     
         <div class="footer__socials">
-          <a class="footer__social-link" href="blank.html" title="Наш Вконтакте">
-            <img class="footer__social-icon" src="img/icon-vk.svg" alt="Наша группа в ВК">
+          <a class="footer__social-link" href="blank.html" title="Наш Вконтакте" aria-label="Наша группа в ВК">
+            <svg class="footer__social-icon"  width="26" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.54 11.73c.92-.3 2.1 1.91 3.35 2.75.95.64 1.67.5 1.67.5l3.34-.04s1.75-.1.92-1.46c-.07-.11-.48-1-2.49-2.83-2.1-1.92-1.8-1.6.72-4.92C24.58 3.71 25.2 2.48 25 1.95c-.19-.5-1.32-.37-1.32-.37l-3.77.03c-.36 0-.67.1-.82.48 0 0-.6 1.56-1.39 2.89-1.67 2.8-2.34 2.95-2.62 2.77-.64-.4-.48-1.63-.48-2.5 0-2.71.42-3.84-.81-4.14-.41-.1-.71-.16-1.76-.17-1.34-.02-2.48 0-3.12.31-.43.21-.76.67-.56.7.25.03.8.14 1.11.54.39.52.37 1.68.37 1.68s.22 3.2-.52 3.6c-.5.27-1.2-.29-2.7-2.83-.76-1.3-1.34-2.74-1.34-2.74s-.1-.27-.3-.42c-.25-.17-.59-.22-.59-.22l-3.57.02s-.54.01-.74.24c-.17.2-.01.63-.01.63s2.8 6.45 5.97 9.7c2.9 2.98 6.21 2.79 6.21 2.79h1.5s.45-.05.68-.3c.22-.22.21-.64.21-.64s-.03-1.98.9-2.27z" fill="#fff"/>
+            </svg>
           </a>
-          <a class="footer__social-link" href="blank.html" title="Наш Фейсбук">
-            <img class="footer__social-icon" src="img/icon-fb.svg" alt="Наша группа в Facebook">
+          <a class="footer__social-link" href="blank.html" title="Наш Фейсбук" aria-label="Наша группа в Facebook">
+            <svg class="footer__social-icon" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/>
+            </svg>
           </a>
           <a class="footer__social-link" href="blank.html" title="Наш Инстаграм">
-            <img class="footer__social-icon" src="img/icon-insta.svg" alt="Наша страница в Instagram">
+            <svg class="footer__social-icon" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h15a3 3 0 013 3v15a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM3 18V9h1.18a6.5 6.5 0 1012.64 0H18v9H3zM14 7h4V3h-4v4z" fill="#fff"/>
+            </svg>
           </a>
         </div>
           
         <p class="footer__email-text">Обратная связь:<br><a class="footer__email" href="blank.html">mail@htmlacademy.ru</a></p>
-        <p class="footer__designed-by-text">Разработано —<br><a class="footer__designed-by" href="blank.html">htmlacademy.ru</a></p>
+        <p class="footer__designed-by-text">Разработано —<br><a class="footer__designed-by" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
     </div>
 
   </footer>
   
-  <section class="modal" id="modal">
+  <section class="modal">
     <h2 class="modal__heading visually-hidden">Обратная связь</h2>
     <form class="modal__form" action="#" method="POST">
       <div class="modal__name-wrapper grid">
@@ -376,16 +446,17 @@
         <input class="modal__submit" type="submit" value="Отправить">
       </div>
     </form>
-    <button class="modal-close" onclick="document.getElementById('modal').style.display = 'none'" aria-label="Закрыть"></button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <section class="map" id="map">
-    <h2 class="map__heading visually-hidden">Компания на Google Карте</h2>
-    <img class="map__location" src="img/map1.png" alt="наше местоположение на карте">
-    <!-- <iframe class="map__location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.320894615964335!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sqa!4v1603617080568!5m2!1sen!2sqa" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
-    <button class="modal-close" onclick="document.getElementById('map').style.display = 'none'" type="button" aria-label="Закрыть"></button>
+  <section class="map">
+    <h2 class="map__heading visually-hidden">Как добраться до нас?</h2>
+    <iframe class="map__location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.320894615964335!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sqa!4v1603617080568!5m2!1sen!2sqa" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
+  <script src="js/script.js"></script>
+  
 </body>
 
 </html>
