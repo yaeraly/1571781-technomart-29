@@ -12,13 +12,6 @@ const close_map      = modal_map.querySelector(".modal-close");
 const close_feedback = modal_feedback.querySelector(".modal-close");
 
 
-for (var i = 0; i < service_item.length; i++) {
-    if (service_item[i].classList.contains("active")) {
-        service_item[i].classList.remove("active");
-        service_item[i].children[0].classList.remove("active");
-    }
-};
-
 link_map.addEventListener("click", function(evt) {
     evt.preventDefault();
     modal_map.classList.add("modal-show");
