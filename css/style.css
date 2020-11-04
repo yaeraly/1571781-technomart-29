@@ -936,13 +936,13 @@ a {
     align-self: start;
 }
 .services__info:nth-of-type(1) {
-    background-image: url("/img/truck.png");
+    background-image: url("../img/truck.png");
     background-repeat: no-repeat;
     background-position: 153px 88px;
     background-size: 465px;
 }
 .services__info:nth-of-type(2) {
-    background-image: url("/img/quarantee.png");
+    background-image: url("../img/quarantee.png");
     background-repeat: no-repeat;
     background-position: 237px 66px;
     background-size: 385px;
@@ -950,7 +950,7 @@ a {
 }
 .services__info:nth-of-type(3) {
     position: relative;
-    background-image: url("/img/credit.png");
+    background-image: url("../img/credit.png");
     background-repeat: no-repeat;
     background-position: 155px 66px;
     background-size: 465px;
@@ -1226,7 +1226,7 @@ a {
 /* Catalog */
 
 .breadcrumbs__list {
-    list-style-image: url("/img/icon-right-small.svg");
+    list-style-image: url("../img/icon-right-small.svg");
     padding-left: 0;
     margin-top: 16px;
     margin-bottom: 20px;
