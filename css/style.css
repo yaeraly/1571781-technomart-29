@@ -78,7 +78,6 @@
     --seashell: #F1F1F1;
     --geyser: #D7DCDE;
     --silver-chalice: #ABABAB;
-    --nobel: ##B5B5B5;
     --fern-green: #518534;
     --black-haze: #f3f7f8;
 
@@ -92,14 +91,24 @@
     --special-lilac: #DC91D8;
     --special-greenlight: #8ED78F;
     --special-yellowlight: #FFD180;
-    --yellowlight: rgba(255,209,128, 0.5);
-    --mystic: rgba(241,245,247,0.5);
     --mirage: #161D29;
     --light-grey: #EAEAEA;
 
     --success: #5FBB2D;
     --warning: #FFBF47;
     --error: #BA2732;
+
+    --rob-roy: rgba(197,197,197,0.3);
+    --porsche: rgba(169, 169, 169, 0.3);
+    --yellowlight: rgba(255,209,128, 0.5);
+    --mystic: rgba(241,245,247,0.5);
+
+    --darker-black: rgba(0, 0, 0, 0.3);
+    --light-black: rgba(0, 0, 0, 0.24);
+    --lightest-black: rgba(0, 0, 0, 0.1);
+    --lighter-black: rgba(0, 0, 0, 0.15);
+
+    --light-white: rgba(255, 255, 255, 0.3);
 }
 
 a {
@@ -140,7 +149,7 @@ a {
     min-width: 1440px;
 }
 .page-body {
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -171,7 +180,7 @@ a {
 }
 .header__logo-link {
     background-color: var(--basic-red);
-    box-shadow: 0 -5px 0 0 rgba(0,0,0,0.24) inset;
+    box-shadow: 0 -5px 0 0 var(--light-black) inset;
     height: 47px;
 }
 .header__logo {
@@ -195,7 +204,7 @@ a {
     left: 18px;
 }
 .header-top path {
-    fill: rgba(255,255,255,0.3);
+    fill: var(--light-white);
 }
 .header__search-input {
     background-color: var(--basic-darkgrey);
@@ -327,7 +336,7 @@ a {
     padding-left: 5px;
 }
 .user__profile-link {
-    color: var(--basic-darkergrey);
+    color: var(--pickled-bluewood);
 }
 .header__address {
     font-size: 14px;
@@ -394,13 +403,13 @@ a {
     color: var(--white);
     display: inline-block;
     vertical-align: top;
-    padding: 17px 28px 20px;
+    padding: 18px 28px 18px;
 }
 .header__nav-link:hover {
     background-color: var(--basic-darkgrey);
 }
 .header__nav-link:active {
-    background-color: var(--big-stone:);
+    background-color: var(--big-stone);
 }
 /* Main Content*/
 .features {
@@ -481,7 +490,7 @@ a {
     font-size: 14px;
     text-transform: uppercase;
     color: var(--white);
-    background-color: rgba(255,255,255,0.3);
+    background-color: var(--light-white);
 }
 .features__item:nth-of-type(1) .features__link {
     padding: 10px 24px;
@@ -512,10 +521,10 @@ a {
     margin: 0 0 17px;
 }
 .features__link:hover {
-    background-color: var(--basic-greylight);
+    background-color: var(--rob-roy);
 }
 .features__link:active {
-    background-color: var(--special-grey);
+    background-color: var(--porsche);
 }
 .features__slider {
     width: 620px;
@@ -525,7 +534,7 @@ a {
     grid-row: 2 / span 2;
     color: var(--white);
     margin-top: 3px;
-    background-color: rgba(0,0,0,0.2)
+    background-color: var(--light-black);
 }
 .features__slider-title {
     font-size: 36px;
@@ -600,8 +609,8 @@ a {
 .features__slider-indicator-item:last-child::after {
     position: absolute;
     content: "";
-    top: 2px;
-    left: 1.5px;
+    top: 1.9px;
+    left: 1.9px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -640,7 +649,7 @@ a {
     margin: 20px 0 49px 0;
 }
 .products__card {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     width: 220px;
     height: 318px;
     border: 1px solid var(--light-grey);
@@ -668,7 +677,7 @@ a {
     content: " "attr(data-line)" ";
     top: 15px;
     right: 13px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 18px;
@@ -676,7 +685,7 @@ a {
     transform: rotate(45deg);
 }
 .products__card:hover {
-    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 4px 20px 0 var(--lighter-black);
 }
 .products__card:nth-child(4n) {
     margin-right: 0;
@@ -709,7 +718,7 @@ a {
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
     border: none;
     border-radius: 2px;
@@ -742,8 +751,8 @@ a {
     border: 3px solid var(--pickled-bluewood);
 }
 .products__card-bookmark-button:active {
-    border: 3px solid rgba(0,0,0,0.3);
-    color: rgba(0,0,0,0.3);
+    border: 3px solid var(--darker-black);
+    color: var(--darker-black);
 }
 .products__card:hover .products__card-buy-button,
 .products__card:hover .products__card-bookmark-button {
@@ -844,10 +853,10 @@ a {
     align-items: center;
 }
 .maker:hover {
-    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 4px 20px 0 var(--lighter-black);
 }
 .maker:active {
-    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 4px 20px 0 var(--lighter-black);
     opacity: 0.5;
 }
 .maker:nth-child(4n) {
@@ -867,7 +876,7 @@ a {
     text-transform: uppercase;
 }
 .services__text {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     margin: 26px 0 0 0;
@@ -973,7 +982,7 @@ a {
     margin: 67px 0 0 0;
 }
 .services__info-text{
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     margin: 30px 0 0 0;
@@ -995,7 +1004,7 @@ a {
     letter-spacing: -1px;
 }
 .company__text {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     margin: 25px 0 3px 0;
 }
@@ -1070,7 +1079,7 @@ a {
     margin: 70px 0 0 59px;
 }
 .address__text {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     margin: 23px 0 0 59px;
 }
@@ -1098,7 +1107,7 @@ a {
 .footer__logo-link {
     grid-column: 1 / span 4;
     background-color: var(--basic-red);
-    box-shadow: 0 -5px 0 0 rgba(0,0,0,0.24) inset;
+    box-shadow: 0 -5px 0 0 var(--light-black) inset;
     width: 220px;
     height: 68px;
 }
@@ -1235,7 +1244,7 @@ a {
     list-style: none;
 }
 .breadcrumbs__link {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     margin-right: 41px;
     font-size: 13px;
     line-height: 18px;
@@ -1268,10 +1277,10 @@ a {
     width: 100%;
     padding: 8px 18px;
     text-transform: uppercase;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 .filter__price-text {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
     font-size: 17px;
     text-transform: uppercase;
@@ -1382,7 +1391,7 @@ a {
     display: inline-block;
     vertical-align: top;
     border-radius: 5px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
     text-align: center;
@@ -1390,7 +1399,7 @@ a {
     background-color: var(--light-fantasy);
 }
 .filter__makers {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
     font-size: 17px;
     text-transform: uppercase;
@@ -1402,11 +1411,8 @@ a {
 .filter__form .filter__maker-input:last-of-type {
     margin-bottom: 6px;
 }
-#hitachi {
-    margin-bottom: 6px;
-}
 .filter__maker-label {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 19px;
     columns: var(--black);
@@ -1452,7 +1458,7 @@ a {
     transform: rotate(-45deg);
 }
 .filter__charger {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
     font-size: 17px;
     text-transform: uppercase;
@@ -1467,7 +1473,7 @@ a {
     margin-bottom: 24px;
 }
 .filter__charger-label {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 19px;
     columns: var(--black);
@@ -1517,7 +1523,7 @@ a {
     background-color: var(--light-grey);
 }
 .filter__show-button {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     text-align: center;
     color: var(--black);
@@ -1537,13 +1543,13 @@ a {
     display: inline-block;
     vertical-align: top;
     text-transform: uppercase;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     margin: 4px 0px 3px 0px;
 }
 .drill__card {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     width: 220px;
     height: 318px;
     border: 1px solid var(--light-grey);
@@ -1555,7 +1561,7 @@ a {
     position: relative;
 }
 .drill__card:hover {
-    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 4px 20px 0 var(--lighter-black);
 }
 .drill__card-buy-button,
 .drill__card-bookmark-button {
@@ -1563,7 +1569,7 @@ a {
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
     border: none;
     border-radius: 2px;
@@ -1587,7 +1593,7 @@ a {
     margin-right: 6px;
 }
 .drill__cart-icon path {
-    fill: rgba(255, 255, 255, 0.3);
+    fill: var(--light-white);
 }
 .drill__card-bookmark-button {
     top: 86px;
@@ -1601,8 +1607,8 @@ a {
     border: 3px solid var(--pickled-bluewood);
 }
 .drill__card-bookmark-button:active {
-    border: 3px solid rgba(0,0,0,0.3);
-    color: rgba(0,0,0,0.3);
+    border: 3px solid var(--darker-black);
+    color: var(--darker-black);
 }
 .drill__card-img {
     position: absolute;
@@ -1721,7 +1727,7 @@ a {
 .drill__pagination-link {
     font-size: 13px;
     line-height: 18px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
     color: var(--black);
     margin: 0;
@@ -1742,10 +1748,10 @@ a {
 .sort__drill-item {
     margin-right: 44px;
     text-transform: uppercase;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
-    color: rgba(0,0,0,0.3);
+    color: var(--darker-black);
 }
 .sort__drill-item:first-child {
     margin-right: 71px;
@@ -1780,7 +1786,7 @@ a {
     margin-top: 64px;
 }
 .tool__desc {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 25px;
 }
@@ -1792,7 +1798,7 @@ a {
 }
 .horizontal-line {
     margin-top: 25px;
-    border: 1px solid rgba(0,0,0,0.1)
+    border: 1px solid var(--lightest-black);
 }
 
 /* Modal Form */
@@ -1803,7 +1809,7 @@ a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border-top: 7px solid var(--basic-red);
-    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 4px 20px 0px var(--lighter-black);
     width: 620px;
     height: 430px;
     margin: 0 auto;
@@ -1848,7 +1854,7 @@ a {
     box-sizing: border-box;
     font-size: 13px;
     line-height: 24px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     padding: 5px 9px 6px 10px;
 }
 .modal__textarea {
@@ -1863,10 +1869,9 @@ a {
     resize: none;
     font-size: 13px;
     line-height: 24px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 .modal__submit-wrapper {
-    display: none;
     width: 100%;
     height: 112px;
     display: flex;
@@ -1886,7 +1891,7 @@ a {
 }
 .map {
     position: fixed;
-    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 4px 20px 0 var(--lighter-black);
     width: 940px;
     height: 446px;
     margin: 0 auto;
